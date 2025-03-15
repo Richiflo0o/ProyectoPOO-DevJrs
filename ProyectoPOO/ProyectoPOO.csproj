@@ -65,6 +65,12 @@
     <Compile Include="Formularios\FrmControlAcceso.Designer.cs">
       <DependentUpon>FrmControlAcceso.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmListadoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmListadoUsuario.Designer.cs">
+      <DependentUpon>FrmListadoUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmControlAcceso.resx">
       <DependentUpon>FrmControlAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmListadoUsuario.resx">
+      <DependentUpon>FrmListadoUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
