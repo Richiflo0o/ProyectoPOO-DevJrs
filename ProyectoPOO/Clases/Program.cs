@@ -17,7 +17,7 @@ namespace ProyectoPOO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPantallaPrincipal());
+            Application.Run(new FrmLogin());
         }
     }
 }
