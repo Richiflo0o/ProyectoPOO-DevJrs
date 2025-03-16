@@ -55,6 +55,14 @@ namespace ProyectoPOO.Formularios
                 return; // Si la validación falla, salir del método
             }
 
+            // Validación para el campo Cantidad
+            int cantidad;
+            if (!int.TryParse(txtcantidadProducto.Text, out cantidad) || cantidad <= 0)
+            {
+                MessageBox.Show("Por favor ingrese una cantidad válida (mayor que 0).");
+                return; // Si la validación falla, salir del método
+            }
+
             // Si las validaciones son correctas, proceder con la inserción
             gProductos = new gProductos();
             cadena =
