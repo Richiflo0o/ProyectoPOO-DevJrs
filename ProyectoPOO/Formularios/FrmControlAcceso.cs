@@ -16,14 +16,5 @@ namespace ProyectoPOO.Formularios
         {
             InitializeComponent();
         }
-        private void FrmControlAcceso_Load(object sender, EventArgs e)
-        {
-
-        }
-        private void FechaHoraHoy_Tick(object sender, EventArgs e)
-        {
-            LabelHoraHoy.Text = DateTime.Now.ToString("HH:mm:ss");
-            LabelFechaHoy.Text = DateTime.Now.ToShortDateString();
-        }
     }
 }

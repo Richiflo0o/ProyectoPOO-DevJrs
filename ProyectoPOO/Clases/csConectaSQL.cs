@@ -25,10 +25,10 @@ namespace AplicacionGym
 
         public csConectaSQL()
         {
-            Server = @"DESKTOP-22RT09N\SQLEXPRESS";
+            Server = @"DESKTOP-ULDUU6I\SQLEXPRESS01";
             Database = "FitMaxDB2";
             Usuario = "sa";
-            Clave = "123456";
+            Clave = "1234";
         }
 
         public bool abrirConexion()
