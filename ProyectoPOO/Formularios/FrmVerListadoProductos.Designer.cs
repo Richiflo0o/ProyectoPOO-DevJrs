@@ -44,12 +44,12 @@
             this.BtnEliminarSocio = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DVGProductos = new System.Windows.Forms.DataGridView();
             this.bartListadoPerfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogoListadoPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrarListadoPerfil)).BeginInit();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DVGProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // bartListadoPerfil
@@ -202,25 +202,25 @@
             this.toolStripButton1.Text = "Comprar";
             this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             // 
-            // dataGridView1
+            // DVGProductos
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 84);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(981, 379);
-            this.dataGridView1.TabIndex = 37;
+            this.DVGProductos.BackgroundColor = System.Drawing.Color.White;
+            this.DVGProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DVGProductos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DVGProductos.Location = new System.Drawing.Point(0, 84);
+            this.DVGProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DVGProductos.Name = "DVGProductos";
+            this.DVGProductos.RowHeadersWidth = 62;
+            this.DVGProductos.RowTemplate.Height = 28;
+            this.DVGProductos.Size = new System.Drawing.Size(981, 379);
+            this.DVGProductos.TabIndex = 37;
             // 
             // FrmVerListadoProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(981, 463);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DVGProductos);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.bartListadoPerfil);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -233,7 +233,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrarListadoPerfil)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DVGProductos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,6 +256,6 @@
         private System.Windows.Forms.ToolStripButton BtnEliminarSocio;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DVGProductos;
     }
 }
