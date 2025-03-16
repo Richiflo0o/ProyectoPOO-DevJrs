@@ -20,5 +20,12 @@ namespace ProyectoPOO.Formularios
         {
 
         }
+
+        private void BtnAgregarSocio_Click(object sender, EventArgs e)
+        {
+            FrmAgregarProductos agregar = new FrmAgregarProductos();
+            agregar.Show();
+            this.Hide();
+        }
     }
 }
