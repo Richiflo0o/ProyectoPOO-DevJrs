@@ -40,6 +40,22 @@ namespace ProyectoPOO.Formularios
 
         private void ButtonGuardarAgregarProducto_Click(object sender, EventArgs e)
         {
+            // Validación para el campo Precio
+            decimal precio;
+            if (!decimal.TryParse(TxtprecioProducto.Text, out precio) || precio <= 0)
+            {
+                MessageBox.Show("Por favor ingrese un precio válido (número decimal positivo).");
+                return; // Si la validación falla, salir del método
+            }
+
+            // Validación para que el precio tenga hasta dos decimales
+            if (precio != Math.Round(precio, 2))
+            {
+                MessageBox.Show("El precio debe tener como máximo dos decimales.");
+                return; // Si la validación falla, salir del método
+            }
+
+            // Si las validaciones son correctas, proceder con la inserción
             gProductos = new gProductos();
             cadena =
                 "'" + TxtCodigoProducto.Text +
@@ -49,7 +65,9 @@ namespace ProyectoPOO.Formularios
                 "','" + TxtprecioProducto.Text +
                 "','" + txtcantidadProducto.Text +
                 "'";
-            gProductos.IngresarUsuario("Productos", "id_producto, producto, categoria, descripcion, precio_unitario,cantidad", cadena);
+
+            gProductos.IngresarUsuario("Productos", "id_producto, producto, categoria, descripcion, precio_unitario,cantidad,estado = DEFAULT", cadena);
         }
+
     }
 }

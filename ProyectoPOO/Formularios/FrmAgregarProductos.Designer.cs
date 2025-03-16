@@ -189,6 +189,7 @@
             this.txtcantidadProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcantidadProducto.Location = new System.Drawing.Point(298, 294);
             this.txtcantidadProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtcantidadProducto.MaxLength = 2;
             this.txtcantidadProducto.Multiline = true;
             this.txtcantidadProducto.Name = "txtcantidadProducto";
             this.txtcantidadProducto.Size = new System.Drawing.Size(56, 33);
@@ -199,6 +200,7 @@
             this.TxtprecioProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtprecioProducto.Location = new System.Drawing.Point(298, 239);
             this.TxtprecioProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtprecioProducto.MaxLength = 4;
             this.TxtprecioProducto.Multiline = true;
             this.TxtprecioProducto.Name = "TxtprecioProducto";
             this.TxtprecioProducto.Size = new System.Drawing.Size(78, 33);
