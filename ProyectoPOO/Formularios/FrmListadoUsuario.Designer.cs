@@ -159,6 +159,7 @@
             this.BtnAgregarSocio.Size = new System.Drawing.Size(93, 25);
             this.BtnAgregarSocio.Text = "Agregar";
             this.BtnAgregarSocio.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.BtnAgregarSocio.Click += new System.EventHandler(this.BtnAgregarSocio_Click);
             // 
             // toolStripSeparator3
             // 
@@ -174,6 +175,7 @@
             this.btnModificarSocio.Size = new System.Drawing.Size(107, 25);
             this.btnModificarSocio.Text = "Modificar";
             this.btnModificarSocio.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnModificarSocio.Click += new System.EventHandler(this.btnModificarSocio_Click);
             // 
             // BtnEliminarSocio
             // 
@@ -202,7 +204,9 @@
             this.DGVListadoUsuarios.RowTemplate.Height = 28;
             this.DGVListadoUsuarios.Size = new System.Drawing.Size(715, 413);
             this.DGVListadoUsuarios.TabIndex = 36;
+            this.DGVListadoUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVListadoUsuarios_CellClick);
             this.DGVListadoUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVListadoUsuarios_CellContentClick);
+            this.DGVListadoUsuarios.Click += new System.EventHandler(this.DGVListadoUsuarios_Click);
             // 
             // FrmListadoUsuario
             // 
@@ -216,6 +220,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmListadoUsuario";
             this.Text = "FrmListadoUsuario";
+            this.Load += new System.EventHandler(this.FrmListadoUsuario_Load);
             this.bartListadoPerfil.ResumeLayout(false);
             this.bartListadoPerfil.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogoListadoPerfil)).EndInit();

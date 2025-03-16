@@ -16,78 +16,23 @@ namespace ProyectoPOO.Formularios
         {
             InitializeComponent();
         }
-        private void AbrirFormulariosHijas(object formulariosHijos)
-        {
-            if (formulariosHijos == null)
-                return;
-
-            if (this.pciContenedor.Controls.Count > 0)
-            {
-                this.pciContenedor.Controls.RemoveAt(0);
-            }
-
-            Form Formularios = formulariosHijos as Form;
-            if (Formularios != null)
-            {
-                Formularios.TopLevel = false;
-                Formularios.Dock = DockStyle.Fill;
-                this.pciContenedor.Controls.Add(Formularios);
-                this.pciContenedor.Tag = Formularios;
-                Formularios.Show();
-            }
-        }
-        //
-        //Formularios Secundario que contiene el principal
-        //
-        private void FrmPantallaPrincipal_Load(object sender, EventArgs e)
-        {
-            FrmControlAcceso ControlAccesoVer = new FrmControlAcceso();
-            ControlAccesoVer.TopLevel = false;
-            ControlAccesoVer.FormBorderStyle = FormBorderStyle.None;
-            ControlAccesoVer.Dock = DockStyle.Fill;
-            AbrirFormulariosHijas(ControlAccesoVer);
-        }
-        private void tsmiListadoDeUsuarios_Click(object sender, EventArgs e)
-        {
-            FrmListadoUsuario listadoUsuario = new FrmListadoUsuario();
-            listadoUsuario.TopLevel = false;
-            listadoUsuario.FormBorderStyle = FormBorderStyle.None;
-            listadoUsuario.Dock = DockStyle.Fill;
-            AbrirFormulariosHijas(listadoUsuario);
-        }
-        private void pciContenedor_Paint(object sender, PaintEventArgs e)
-        {
-            if (this.pciContenedor.Controls.Count == 0)
-            {
-                FrmControlAcceso ControlAccesoVer = new FrmControlAcceso();
-                ControlAccesoVer.TopLevel = false;
-                ControlAccesoVer.FormBorderStyle = FormBorderStyle.None;
-                ControlAccesoVer.Dock = DockStyle.Fill;
-                pciContenedor.Controls.Clear();
-                AbrirFormulariosHijas(ControlAccesoVer);
-            }
-        }
-        //
-        //Panel de Control
-        //
-        private void ptbMaximizar_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Normal)
-            {
-                this.WindowState = FormWindowState.Maximized;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
-        }
         private void PtbCerrarFormularioPrincipal_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-        private void ptbMinimizar_Click(object sender, EventArgs e)
+
+        private void tsmiListaDeUsuarios_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
-        }  
+            FrmAgregarPerfil crearperfil = new FrmAgregarPerfil();
+            crearperfil.Show();
+            this.Hide();
+        }
+
+        private void tsmiListadoDeUsuarios_Click(object sender, EventArgs e)
+        {
+            FrmListadoUsuario listadousaurio = new FrmListadoUsuario();
+            listadousaurio.Show();
+            this.Hide();
+        }
     }
 }
