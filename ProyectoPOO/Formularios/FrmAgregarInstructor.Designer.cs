@@ -297,7 +297,7 @@
             this.LabelNuevoUsuario.AutoSize = true;
             this.LabelNuevoUsuario.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelNuevoUsuario.ForeColor = System.Drawing.Color.White;
-            this.LabelNuevoUsuario.Location = new System.Drawing.Point(213, 7);
+            this.LabelNuevoUsuario.Location = new System.Drawing.Point(386, 6);
             this.LabelNuevoUsuario.Name = "LabelNuevoUsuario";
             this.LabelNuevoUsuario.Size = new System.Drawing.Size(280, 37);
             this.LabelNuevoUsuario.TabIndex = 3;
