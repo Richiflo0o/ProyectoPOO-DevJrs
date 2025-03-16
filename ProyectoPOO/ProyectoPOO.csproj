@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clases\csConectaSQL.cs" />
+    <Compile Include="clases\gInstructor.cs" />
     <Compile Include="clases\Program.cs" />
     <Compile Include="clases\Usuario.cs" />
     <Compile Include="formularios\FrmAgregarPerfil.cs">
