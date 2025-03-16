@@ -90,6 +90,12 @@
       <DependentUpon>FrmPantallaPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Program.cs" />
+    <Compile Include="Formularios\FrmVerListadoProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmVerListadoProductos.Designer.cs">
+      <DependentUpon>FrmVerListadoProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\FrmAgregarPerfil.resx">
       <DependentUpon>FrmAgregarPerfil.cs</DependentUpon>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmPantallaPrincipal.resx">
       <DependentUpon>FrmPantallaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmVerListadoProductos.resx">
+      <DependentUpon>FrmVerListadoProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
