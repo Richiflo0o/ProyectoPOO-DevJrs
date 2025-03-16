@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmControlAcceso));
             this.dgvControlAcceso = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -44,7 +43,6 @@
             this.LabelOpcionesDeBusquedaNombre = new System.Windows.Forms.Label();
             this.LabelControlAcceso = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.FechaHoraHoy = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvControlAcceso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxAgregarVentaProductos)).BeginInit();
@@ -57,24 +55,21 @@
             // 
             // dgvControlAcceso
             // 
-            this.dgvControlAcceso.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvControlAcceso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvControlAcceso.Location = new System.Drawing.Point(166, 112);
+            this.dgvControlAcceso.Location = new System.Drawing.Point(249, 172);
+            this.dgvControlAcceso.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvControlAcceso.Name = "dgvControlAcceso";
             this.dgvControlAcceso.RowHeadersWidth = 62;
-            this.dgvControlAcceso.Size = new System.Drawing.Size(562, 261);
+            this.dgvControlAcceso.Size = new System.Drawing.Size(843, 402);
             this.dgvControlAcceso.TabIndex = 17;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 105);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 162);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(153, 153);
+            this.pictureBox1.Size = new System.Drawing.Size(230, 235);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
@@ -84,23 +79,21 @@
             this.LabelHoraHoy.AutoSize = true;
             this.LabelHoraHoy.Font = new System.Drawing.Font("Impact", 18F);
             this.LabelHoraHoy.ForeColor = System.Drawing.Color.Gray;
-            this.LabelHoraHoy.Location = new System.Drawing.Point(21, 26);
-            this.LabelHoraHoy.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LabelHoraHoy.Location = new System.Drawing.Point(32, 40);
             this.LabelHoraHoy.Name = "LabelHoraHoy";
-            this.LabelHoraHoy.Size = new System.Drawing.Size(72, 29);
+            this.LabelHoraHoy.Size = new System.Drawing.Size(106, 44);
             this.LabelHoraHoy.TabIndex = 15;
             this.LabelHoraHoy.Text = "Fecha";
             // 
             // LabelFechaHoy
             // 
-            this.LabelFechaHoy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.LabelFechaHoy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelFechaHoy.BackColor = System.Drawing.Color.Transparent;
-            this.LabelFechaHoy.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelFechaHoy.Font = new System.Drawing.Font("Georgia", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelFechaHoy.ForeColor = System.Drawing.Color.Brown;
-            this.LabelFechaHoy.Location = new System.Drawing.Point(8, 373);
-            this.LabelFechaHoy.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LabelFechaHoy.Location = new System.Drawing.Point(12, 574);
             this.LabelFechaHoy.Name = "LabelFechaHoy";
-            this.LabelFechaHoy.Size = new System.Drawing.Size(167, 40);
+            this.LabelFechaHoy.Size = new System.Drawing.Size(250, 62);
             this.LabelFechaHoy.TabIndex = 14;
             this.LabelFechaHoy.Text = "label2";
             // 
@@ -109,10 +102,10 @@
             this.PictureBoxAgregarVentaProductos.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.PictureBoxAgregarVentaProductos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxAgregarVentaProductos.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxAgregarVentaProductos.Image")));
-            this.PictureBoxAgregarVentaProductos.Location = new System.Drawing.Point(795, 274);
-            this.PictureBoxAgregarVentaProductos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.PictureBoxAgregarVentaProductos.Location = new System.Drawing.Point(1192, 422);
+            this.PictureBoxAgregarVentaProductos.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.PictureBoxAgregarVentaProductos.Name = "PictureBoxAgregarVentaProductos";
-            this.PictureBoxAgregarVentaProductos.Size = new System.Drawing.Size(54, 39);
+            this.PictureBoxAgregarVentaProductos.Size = new System.Drawing.Size(81, 60);
             this.PictureBoxAgregarVentaProductos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBoxAgregarVentaProductos.TabIndex = 13;
             this.PictureBoxAgregarVentaProductos.TabStop = false;
@@ -122,10 +115,10 @@
             this.PictureBoxDeudasClientes.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.PictureBoxDeudasClientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxDeudasClientes.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxDeudasClientes.Image")));
-            this.PictureBoxDeudasClientes.Location = new System.Drawing.Point(795, 212);
-            this.PictureBoxDeudasClientes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.PictureBoxDeudasClientes.Location = new System.Drawing.Point(1192, 326);
+            this.PictureBoxDeudasClientes.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.PictureBoxDeudasClientes.Name = "PictureBoxDeudasClientes";
-            this.PictureBoxDeudasClientes.Size = new System.Drawing.Size(54, 46);
+            this.PictureBoxDeudasClientes.Size = new System.Drawing.Size(81, 71);
             this.PictureBoxDeudasClientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBoxDeudasClientes.TabIndex = 12;
             this.PictureBoxDeudasClientes.TabStop = false;
@@ -135,10 +128,10 @@
             this.PictureBoxAgregarSocio.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.PictureBoxAgregarSocio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxAgregarSocio.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxAgregarSocio.Image")));
-            this.PictureBoxAgregarSocio.Location = new System.Drawing.Point(795, 151);
-            this.PictureBoxAgregarSocio.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.PictureBoxAgregarSocio.Location = new System.Drawing.Point(1192, 232);
+            this.PictureBoxAgregarSocio.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.PictureBoxAgregarSocio.Name = "PictureBoxAgregarSocio";
-            this.PictureBoxAgregarSocio.Size = new System.Drawing.Size(57, 47);
+            this.PictureBoxAgregarSocio.Size = new System.Drawing.Size(86, 72);
             this.PictureBoxAgregarSocio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBoxAgregarSocio.TabIndex = 11;
             this.PictureBoxAgregarSocio.TabStop = false;
@@ -148,10 +141,10 @@
             this.PictureBoxNotificaicones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PictureBoxNotificaicones.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxNotificaicones.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxNotificaicones.Image")));
-            this.PictureBoxNotificaicones.Location = new System.Drawing.Point(795, 26);
-            this.PictureBoxNotificaicones.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.PictureBoxNotificaicones.Location = new System.Drawing.Point(1192, 40);
+            this.PictureBoxNotificaicones.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.PictureBoxNotificaicones.Name = "PictureBoxNotificaicones";
-            this.PictureBoxNotificaicones.Size = new System.Drawing.Size(45, 42);
+            this.PictureBoxNotificaicones.Size = new System.Drawing.Size(68, 65);
             this.PictureBoxNotificaicones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBoxNotificaicones.TabIndex = 10;
             this.PictureBoxNotificaicones.TabStop = false;
@@ -164,33 +157,32 @@
             this.PanelLetrasControlAcceso.Controls.Add(this.LabelOpcionesDeBusquedaNombre);
             this.PanelLetrasControlAcceso.Controls.Add(this.LabelControlAcceso);
             this.PanelLetrasControlAcceso.Controls.Add(this.label1);
-            this.PanelLetrasControlAcceso.Location = new System.Drawing.Point(159, 9);
-            this.PanelLetrasControlAcceso.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.PanelLetrasControlAcceso.Location = new System.Drawing.Point(238, 14);
+            this.PanelLetrasControlAcceso.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.PanelLetrasControlAcceso.Name = "PanelLetrasControlAcceso";
-            this.PanelLetrasControlAcceso.Size = new System.Drawing.Size(537, 88);
+            this.PanelLetrasControlAcceso.Size = new System.Drawing.Size(806, 135);
             this.PanelLetrasControlAcceso.TabIndex = 9;
             // 
             // PictureBoxBuscarSocio
             // 
             this.PictureBoxBuscarSocio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxBuscarSocio.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxBuscarSocio.Image")));
-            this.PictureBoxBuscarSocio.Location = new System.Drawing.Point(492, 43);
-            this.PictureBoxBuscarSocio.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.PictureBoxBuscarSocio.Location = new System.Drawing.Point(738, 66);
+            this.PictureBoxBuscarSocio.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.PictureBoxBuscarSocio.Name = "PictureBoxBuscarSocio";
-            this.PictureBoxBuscarSocio.Size = new System.Drawing.Size(30, 32);
+            this.PictureBoxBuscarSocio.Size = new System.Drawing.Size(45, 49);
             this.PictureBoxBuscarSocio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBoxBuscarSocio.TabIndex = 7;
             this.PictureBoxBuscarSocio.TabStop = false;
             // 
             // txtBusquedaOpciones
             // 
-            this.txtBusquedaOpciones.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtBusquedaOpciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBusquedaOpciones.Font = new System.Drawing.Font("Segoe UI Symbol", 13.8F);
-            this.txtBusquedaOpciones.Location = new System.Drawing.Point(253, 51);
-            this.txtBusquedaOpciones.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtBusquedaOpciones.Location = new System.Drawing.Point(380, 78);
+            this.txtBusquedaOpciones.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtBusquedaOpciones.Name = "txtBusquedaOpciones";
-            this.txtBusquedaOpciones.Size = new System.Drawing.Size(225, 25);
+            this.txtBusquedaOpciones.Size = new System.Drawing.Size(338, 37);
             this.txtBusquedaOpciones.TabIndex = 4;
             // 
             // LabelOpcionesDeBusquedaNombre
@@ -198,10 +190,9 @@
             this.LabelOpcionesDeBusquedaNombre.AutoSize = true;
             this.LabelOpcionesDeBusquedaNombre.Font = new System.Drawing.Font("Ink Free", 18F, System.Drawing.FontStyle.Bold);
             this.LabelOpcionesDeBusquedaNombre.ForeColor = System.Drawing.Color.Black;
-            this.LabelOpcionesDeBusquedaNombre.Location = new System.Drawing.Point(1, 50);
-            this.LabelOpcionesDeBusquedaNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LabelOpcionesDeBusquedaNombre.Location = new System.Drawing.Point(2, 77);
             this.LabelOpcionesDeBusquedaNombre.Name = "LabelOpcionesDeBusquedaNombre";
-            this.LabelOpcionesDeBusquedaNombre.Size = new System.Drawing.Size(239, 30);
+            this.LabelOpcionesDeBusquedaNombre.Size = new System.Drawing.Size(352, 45);
             this.LabelOpcionesDeBusquedaNombre.TabIndex = 2;
             this.LabelOpcionesDeBusquedaNombre.Text = "Cedula De Identidad";
             // 
@@ -211,10 +202,9 @@
             this.LabelControlAcceso.AutoSize = true;
             this.LabelControlAcceso.Font = new System.Drawing.Font("Impact", 22.2F, System.Drawing.FontStyle.Bold);
             this.LabelControlAcceso.ForeColor = System.Drawing.Color.SeaGreen;
-            this.LabelControlAcceso.Location = new System.Drawing.Point(110, 7);
-            this.LabelControlAcceso.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LabelControlAcceso.Location = new System.Drawing.Point(165, 11);
             this.LabelControlAcceso.Name = "LabelControlAcceso";
-            this.LabelControlAcceso.Size = new System.Drawing.Size(272, 37);
+            this.LabelControlAcceso.Size = new System.Drawing.Size(401, 56);
             this.LabelControlAcceso.TabIndex = 1;
             this.LabelControlAcceso.Text = "CONTROL DE ACCESO";
             // 
@@ -223,25 +213,18 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 13.8F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(2, 58);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(3, 89);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(534, 25);
+            this.label1.Size = new System.Drawing.Size(771, 38);
             this.label1.TabIndex = 3;
             this.label1.Text = "__________________________________________________________";
             // 
-            // FechaHoraHoy
-            // 
-            this.FechaHoraHoy.Enabled = true;
-            this.FechaHoraHoy.Interval = 1000;
-            this.FechaHoraHoy.Tick += new System.EventHandler(this.FechaHoraHoy_Tick);
-            // 
             // FrmControlAcceso
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(862, 435);
+            this.ClientSize = new System.Drawing.Size(1293, 669);
             this.Controls.Add(this.dgvControlAcceso);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LabelHoraHoy);
@@ -252,10 +235,8 @@
             this.Controls.Add(this.PictureBoxNotificaicones);
             this.Controls.Add(this.PanelLetrasControlAcceso);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmControlAcceso";
             this.Text = "FrmControlAcceso";
-            this.Load += new System.EventHandler(this.FrmControlAcceso_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvControlAcceso)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxAgregarVentaProductos)).EndInit();
@@ -286,6 +267,5 @@
         private System.Windows.Forms.Label LabelOpcionesDeBusquedaNombre;
         private System.Windows.Forms.Label LabelControlAcceso;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Timer FechaHoraHoy;
     }
 }

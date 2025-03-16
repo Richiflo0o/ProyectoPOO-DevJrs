@@ -225,7 +225,8 @@
             this.cmbObjetivo.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbObjetivo.FormattingEnabled = true;
             this.cmbObjetivo.Items.AddRange(new object[] {
-            "Los Rios"});
+            "Perder Peso",
+            "Ganar Masa"});
             this.cmbObjetivo.Location = new System.Drawing.Point(182, 509);
             this.cmbObjetivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbObjetivo.Name = "cmbObjetivo";
