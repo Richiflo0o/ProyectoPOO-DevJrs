@@ -51,5 +51,12 @@ namespace ProyectoPOO.Formularios
 
             }
         }
+
+        private void agregarUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAgregarUsuario agregarUsuario = new FrmAgregarUsuario();
+                agregarUsuario.Show();
+            this.Hide();
         }
+    }
 }
