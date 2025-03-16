@@ -16,5 +16,10 @@ namespace ProyectoPOO.Formularios
         {
             InitializeComponent();
         }
+
+        private void PtbCerrarFrmMembresia_Click(object sender, EventArgs e)
+        {
+           this.Close();
+        }
     }
 }
