@@ -82,23 +82,29 @@
     <Compile Include="Formularios\FrmAgregarProductos.Designer.cs">
       <DependentUpon>FrmAgregarProductos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmAsistencia.cs">
+    <Compile Include="Formularios\FrmAgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmAsistencia.Designer.cs">
-      <DependentUpon>FrmAsistencia.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\FrmAsistencia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\FrmAsistencia.Designer.cs">
-      <DependentUpon>FrmAsistencia.cs</DependentUpon>
+    <Compile Include="Formularios\FrmAgregarUsuario.Designer.cs">
+      <DependentUpon>FrmAgregarUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FrmControlAcceso.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\FrmControlAcceso.Designer.cs">
       <DependentUpon>FrmControlAcceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmInstructores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmInstructores.Designer.cs">
+      <DependentUpon>FrmInstructores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmListadoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmListadoUsuario.Designer.cs">
+      <DependentUpon>FrmListadoUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FrmLogin.cs">
       <SubType>Form</SubType>
@@ -118,6 +124,18 @@
     <Compile Include="Formularios\FrmPantallaPrincipal.Designer.cs">
       <DependentUpon>FrmPantallaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmProveedores.Designer.cs">
+      <DependentUpon>FrmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmVerListadoProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmVerListadoProductos.Designer.cs">
+      <DependentUpon>FrmVerListadoProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\FrmAgregarPerfil.resx">
@@ -126,14 +144,14 @@
     <EmbeddedResource Include="Formularios\FrmAgregarProductos.resx">
       <DependentUpon>FrmAgregarProductos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmAsistencia.resx">
-      <DependentUpon>FrmAsistencia.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmAsistencia.resx">
-      <DependentUpon>FrmAsistencia.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmAgregarUsuario.resx">
+      <DependentUpon>FrmAgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmControlAcceso.resx">
       <DependentUpon>FrmControlAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmListadoUsuario.resx">
+      <DependentUpon>FrmListadoUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -143,6 +161,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmPantallaPrincipal.resx">
       <DependentUpon>FrmPantallaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmProveedores.resx">
+      <DependentUpon>FrmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmVerListadoProductos.resx">
+      <DependentUpon>FrmVerListadoProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

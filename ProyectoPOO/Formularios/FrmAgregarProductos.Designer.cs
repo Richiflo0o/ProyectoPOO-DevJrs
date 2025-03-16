@@ -36,6 +36,8 @@
             this.ButtonGuardarAgregarProducto = new System.Windows.Forms.Button();
             this.BarraTituloFormularioAgregarProducto = new System.Windows.Forms.Panel();
             this.LabelVerAgregarProducto = new System.Windows.Forms.Label();
+            this.LabelCerrarSesion = new System.Windows.Forms.Label();
+            this.PictureBoxLogoFormularioAgregarProducto = new System.Windows.Forms.PictureBox();
             this.PtbCerrarFormularioAgregarProductos = new System.Windows.Forms.PictureBox();
             this.TxtNombreProducto = new System.Windows.Forms.TextBox();
             this.txtcantidadProducto = new System.Windows.Forms.TextBox();
@@ -49,58 +51,62 @@
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.BarraTituloFormularioAgregarProducto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxLogoFormularioAgregarProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PtbCerrarFormularioAgregarProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(642, 108);
+            this.pictureBox1.Location = new System.Drawing.Point(571, 70);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 160);
+            this.pictureBox1.Size = new System.Drawing.Size(148, 128);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
             // 
             // cmbCategoria
             // 
+            this.cmbCategoria.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCategoria.FormattingEnabled = true;
-            this.cmbCategoria.Location = new System.Drawing.Point(344, 189);
+            this.cmbCategoria.Location = new System.Drawing.Point(298, 143);
+            this.cmbCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(218, 28);
+            this.cmbCategoria.Size = new System.Drawing.Size(195, 36);
             this.cmbCategoria.TabIndex = 21;
             // 
             // TxtDescripcionProductos
             // 
             this.TxtDescripcionProductos.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDescripcionProductos.Location = new System.Drawing.Point(8, 317);
-            this.TxtDescripcionProductos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtDescripcionProductos.Location = new System.Drawing.Point(298, 189);
+            this.TxtDescripcionProductos.Margin = new System.Windows.Forms.Padding(4);
             this.TxtDescripcionProductos.Multiline = true;
             this.TxtDescripcionProductos.Name = "TxtDescripcionProductos";
-            this.TxtDescripcionProductos.Size = new System.Drawing.Size(282, 26);
+            this.TxtDescripcionProductos.Size = new System.Drawing.Size(250, 33);
             this.TxtDescripcionProductos.TabIndex = 23;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 403);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(166, 294);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 29);
+            this.label1.Size = new System.Drawing.Size(104, 28);
             this.label1.TabIndex = 29;
-            this.label1.Text = "Cantidad";
+            this.label1.Text = "Cantidad:";
             // 
             // ButtonGuardarAgregarProducto
             // 
             this.ButtonGuardarAgregarProducto.BackColor = System.Drawing.Color.SeaGreen;
-            this.ButtonGuardarAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonGuardarAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ButtonGuardarAgregarProducto.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonGuardarAgregarProducto.ForeColor = System.Drawing.Color.White;
-            this.ButtonGuardarAgregarProducto.Location = new System.Drawing.Point(514, 346);
-            this.ButtonGuardarAgregarProducto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ButtonGuardarAgregarProducto.Location = new System.Drawing.Point(538, 261);
+            this.ButtonGuardarAgregarProducto.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonGuardarAgregarProducto.Name = "ButtonGuardarAgregarProducto";
-            this.ButtonGuardarAgregarProducto.Size = new System.Drawing.Size(204, 86);
+            this.ButtonGuardarAgregarProducto.Size = new System.Drawing.Size(181, 69);
             this.ButtonGuardarAgregarProducto.TabIndex = 27;
             this.ButtonGuardarAgregarProducto.Text = "Guardar";
             this.ButtonGuardarAgregarProducto.UseVisualStyleBackColor = false;
@@ -109,11 +115,14 @@
             // 
             this.BarraTituloFormularioAgregarProducto.BackColor = System.Drawing.Color.SeaGreen;
             this.BarraTituloFormularioAgregarProducto.Controls.Add(this.LabelVerAgregarProducto);
+            this.BarraTituloFormularioAgregarProducto.Controls.Add(this.LabelCerrarSesion);
+            this.BarraTituloFormularioAgregarProducto.Controls.Add(this.PictureBoxLogoFormularioAgregarProducto);
             this.BarraTituloFormularioAgregarProducto.Controls.Add(this.PtbCerrarFormularioAgregarProductos);
             this.BarraTituloFormularioAgregarProducto.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTituloFormularioAgregarProducto.Location = new System.Drawing.Point(0, 0);
+            this.BarraTituloFormularioAgregarProducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BarraTituloFormularioAgregarProducto.Name = "BarraTituloFormularioAgregarProducto";
-            this.BarraTituloFormularioAgregarProducto.Size = new System.Drawing.Size(838, 63);
+            this.BarraTituloFormularioAgregarProducto.Size = new System.Drawing.Size(745, 50);
             this.BarraTituloFormularioAgregarProducto.TabIndex = 28;
             // 
             // LabelVerAgregarProducto
@@ -121,20 +130,44 @@
             this.LabelVerAgregarProducto.AutoSize = true;
             this.LabelVerAgregarProducto.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelVerAgregarProducto.ForeColor = System.Drawing.Color.White;
-            this.LabelVerAgregarProducto.Location = new System.Drawing.Point(76, 5);
+            this.LabelVerAgregarProducto.Location = new System.Drawing.Point(291, 4);
             this.LabelVerAgregarProducto.Name = "LabelVerAgregarProducto";
-            this.LabelVerAgregarProducto.Size = new System.Drawing.Size(342, 48);
+            this.LabelVerAgregarProducto.Size = new System.Drawing.Size(282, 41);
             this.LabelVerAgregarProducto.TabIndex = 7;
             this.LabelVerAgregarProducto.Text = "AGREGAR PRODUCTO";
+            // 
+            // LabelCerrarSesion
+            // 
+            this.LabelCerrarSesion.AutoSize = true;
+            this.LabelCerrarSesion.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelCerrarSesion.ForeColor = System.Drawing.Color.White;
+            this.LabelCerrarSesion.Location = new System.Drawing.Point(915, 14);
+            this.LabelCerrarSesion.Name = "LabelCerrarSesion";
+            this.LabelCerrarSesion.Size = new System.Drawing.Size(111, 23);
+            this.LabelCerrarSesion.TabIndex = 5;
+            this.LabelCerrarSesion.Text = "Cerrar Sesion";
+            // 
+            // PictureBoxLogoFormularioAgregarProducto
+            // 
+            this.PictureBoxLogoFormularioAgregarProducto.BackColor = System.Drawing.Color.SeaGreen;
+            this.PictureBoxLogoFormularioAgregarProducto.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxLogoFormularioAgregarProducto.Image")));
+            this.PictureBoxLogoFormularioAgregarProducto.Location = new System.Drawing.Point(-24, -4);
+            this.PictureBoxLogoFormularioAgregarProducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PictureBoxLogoFormularioAgregarProducto.Name = "PictureBoxLogoFormularioAgregarProducto";
+            this.PictureBoxLogoFormularioAgregarProducto.Size = new System.Drawing.Size(236, 52);
+            this.PictureBoxLogoFormularioAgregarProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBoxLogoFormularioAgregarProducto.TabIndex = 0;
+            this.PictureBoxLogoFormularioAgregarProducto.TabStop = false;
             // 
             // PtbCerrarFormularioAgregarProductos
             // 
             this.PtbCerrarFormularioAgregarProductos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PtbCerrarFormularioAgregarProductos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PtbCerrarFormularioAgregarProductos.Image = ((System.Drawing.Image)(resources.GetObject("PtbCerrarFormularioAgregarProductos.Image")));
-            this.PtbCerrarFormularioAgregarProductos.Location = new System.Drawing.Point(794, 14);
+            this.PtbCerrarFormularioAgregarProductos.Location = new System.Drawing.Point(705, 11);
+            this.PtbCerrarFormularioAgregarProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PtbCerrarFormularioAgregarProductos.Name = "PtbCerrarFormularioAgregarProductos";
-            this.PtbCerrarFormularioAgregarProductos.Size = new System.Drawing.Size(33, 35);
+            this.PtbCerrarFormularioAgregarProductos.Size = new System.Drawing.Size(29, 28);
             this.PtbCerrarFormularioAgregarProductos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PtbCerrarFormularioAgregarProductos.TabIndex = 1;
             this.PtbCerrarFormularioAgregarProductos.TabStop = false;
@@ -143,115 +176,115 @@
             // TxtNombreProducto
             // 
             this.TxtNombreProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombreProducto.Location = new System.Drawing.Point(8, 189);
-            this.TxtNombreProducto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtNombreProducto.Location = new System.Drawing.Point(298, 101);
+            this.TxtNombreProducto.Margin = new System.Windows.Forms.Padding(4);
             this.TxtNombreProducto.Multiline = true;
             this.TxtNombreProducto.Name = "TxtNombreProducto";
-            this.TxtNombreProducto.Size = new System.Drawing.Size(230, 26);
+            this.TxtNombreProducto.Size = new System.Drawing.Size(205, 33);
             this.TxtNombreProducto.TabIndex = 19;
             // 
             // txtcantidadProducto
             // 
             this.txtcantidadProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcantidadProducto.Location = new System.Drawing.Point(142, 406);
-            this.txtcantidadProducto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtcantidadProducto.Location = new System.Drawing.Point(298, 294);
+            this.txtcantidadProducto.Margin = new System.Windows.Forms.Padding(4);
             this.txtcantidadProducto.Multiline = true;
             this.txtcantidadProducto.Name = "txtcantidadProducto";
-            this.txtcantidadProducto.Size = new System.Drawing.Size(62, 26);
+            this.txtcantidadProducto.Size = new System.Drawing.Size(56, 33);
             this.txtcantidadProducto.TabIndex = 26;
             // 
             // TxtprecioProducto
             // 
             this.TxtprecioProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtprecioProducto.Location = new System.Drawing.Point(344, 317);
-            this.TxtprecioProducto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtprecioProducto.Location = new System.Drawing.Point(298, 239);
+            this.TxtprecioProducto.Margin = new System.Windows.Forms.Padding(4);
             this.TxtprecioProducto.Multiline = true;
             this.TxtprecioProducto.Name = "TxtprecioProducto";
-            this.TxtprecioProducto.Size = new System.Drawing.Size(86, 26);
+            this.TxtprecioProducto.Size = new System.Drawing.Size(78, 33);
             this.TxtprecioProducto.TabIndex = 25;
+            this.TxtprecioProducto.TextChanged += new System.EventHandler(this.TxtprecioProducto_TextChanged);
             // 
             // TxtCodigoProducto
             // 
-            this.TxtCodigoProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCodigoProducto.Location = new System.Drawing.Point(108, 78);
-            this.TxtCodigoProducto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtCodigoProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCodigoProducto.Location = new System.Drawing.Point(298, 60);
+            this.TxtCodigoProducto.Margin = new System.Windows.Forms.Padding(4);
             this.TxtCodigoProducto.Multiline = true;
             this.TxtCodigoProducto.Name = "TxtCodigoProducto";
-            this.TxtCodigoProducto.Size = new System.Drawing.Size(97, 26);
+            this.TxtCodigoProducto.Size = new System.Drawing.Size(87, 33);
             this.TxtCodigoProducto.TabIndex = 17;
             // 
             // LabelPrecioVentaFormularioAgregarProducto
             // 
             this.LabelPrecioVentaFormularioAgregarProducto.AutoSize = true;
-            this.LabelPrecioVentaFormularioAgregarProducto.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelPrecioVentaFormularioAgregarProducto.Location = new System.Drawing.Point(10, 255);
+            this.LabelPrecioVentaFormularioAgregarProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelPrecioVentaFormularioAgregarProducto.Location = new System.Drawing.Point(7, 189);
             this.LabelPrecioVentaFormularioAgregarProducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelPrecioVentaFormularioAgregarProducto.Name = "LabelPrecioVentaFormularioAgregarProducto";
-            this.LabelPrecioVentaFormularioAgregarProducto.Size = new System.Drawing.Size(287, 29);
+            this.LabelPrecioVentaFormularioAgregarProducto.Size = new System.Drawing.Size(263, 28);
             this.LabelPrecioVentaFormularioAgregarProducto.TabIndex = 24;
-            this.LabelPrecioVentaFormularioAgregarProducto.Text = "Descripcion Del Producto";
+            this.LabelPrecioVentaFormularioAgregarProducto.Text = "Descripcion Del Producto:";
             // 
             // LabelPrecioCompraFormularioAgregarProducto
             // 
             this.LabelPrecioCompraFormularioAgregarProducto.AutoSize = true;
-            this.LabelPrecioCompraFormularioAgregarProducto.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelPrecioCompraFormularioAgregarProducto.Location = new System.Drawing.Point(339, 255);
+            this.LabelPrecioCompraFormularioAgregarProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelPrecioCompraFormularioAgregarProducto.Location = new System.Drawing.Point(60, 239);
             this.LabelPrecioCompraFormularioAgregarProducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelPrecioCompraFormularioAgregarProducto.Name = "LabelPrecioCompraFormularioAgregarProducto";
-            this.LabelPrecioCompraFormularioAgregarProducto.Size = new System.Drawing.Size(228, 29);
+            this.LabelPrecioCompraFormularioAgregarProducto.Size = new System.Drawing.Size(210, 28);
             this.LabelPrecioCompraFormularioAgregarProducto.TabIndex = 22;
-            this.LabelPrecioCompraFormularioAgregarProducto.Text = "Precio Del Producto";
+            this.LabelPrecioCompraFormularioAgregarProducto.Text = "Precio Del Producto:";
             // 
             // LabelDescripcionFormularioAgregarProducto
             // 
             this.LabelDescripcionFormularioAgregarProducto.AutoSize = true;
-            this.LabelDescripcionFormularioAgregarProducto.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelDescripcionFormularioAgregarProducto.Location = new System.Drawing.Point(302, 145);
+            this.LabelDescripcionFormularioAgregarProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelDescripcionFormularioAgregarProducto.Location = new System.Drawing.Point(26, 143);
             this.LabelDescripcionFormularioAgregarProducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelDescripcionFormularioAgregarProducto.Name = "LabelDescripcionFormularioAgregarProducto";
-            this.LabelDescripcionFormularioAgregarProducto.Size = new System.Drawing.Size(261, 29);
+            this.LabelDescripcionFormularioAgregarProducto.Size = new System.Drawing.Size(244, 28);
             this.LabelDescripcionFormularioAgregarProducto.TabIndex = 20;
-            this.LabelDescripcionFormularioAgregarProducto.Text = "Categoria Del Producto";
+            this.LabelDescripcionFormularioAgregarProducto.Text = "Categoria Del Producto:";
             // 
             // LabelNombreFormularioAgregarProducto
             // 
             this.LabelNombreFormularioAgregarProducto.AutoSize = true;
-            this.LabelNombreFormularioAgregarProducto.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelNombreFormularioAgregarProducto.Location = new System.Drawing.Point(14, 145);
+            this.LabelNombreFormularioAgregarProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelNombreFormularioAgregarProducto.Location = new System.Drawing.Point(41, 101);
             this.LabelNombreFormularioAgregarProducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelNombreFormularioAgregarProducto.Name = "LabelNombreFormularioAgregarProducto";
-            this.LabelNombreFormularioAgregarProducto.Size = new System.Drawing.Size(247, 29);
+            this.LabelNombreFormularioAgregarProducto.Size = new System.Drawing.Size(229, 28);
             this.LabelNombreFormularioAgregarProducto.TabIndex = 18;
-            this.LabelNombreFormularioAgregarProducto.Text = "Nombre Del Producto";
+            this.LabelNombreFormularioAgregarProducto.Text = "Nombre Del Producto:";
             // 
             // LabelCodigoFormularioAgregarProducto
             // 
             this.LabelCodigoFormularioAgregarProducto.AutoSize = true;
-            this.LabelCodigoFormularioAgregarProducto.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelCodigoFormularioAgregarProducto.Location = new System.Drawing.Point(14, 78);
+            this.LabelCodigoFormularioAgregarProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelCodigoFormularioAgregarProducto.Location = new System.Drawing.Point(182, 59);
             this.LabelCodigoFormularioAgregarProducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelCodigoFormularioAgregarProducto.Name = "LabelCodigoFormularioAgregarProducto";
-            this.LabelCodigoFormularioAgregarProducto.Size = new System.Drawing.Size(87, 29);
+            this.LabelCodigoFormularioAgregarProducto.Size = new System.Drawing.Size(88, 28);
             this.LabelCodigoFormularioAgregarProducto.TabIndex = 16;
-            this.LabelCodigoFormularioAgregarProducto.Text = "Código";
+            this.LabelCodigoFormularioAgregarProducto.Text = "Código:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(440, 314);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(266, 242);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 29);
+            this.label2.Size = new System.Drawing.Size(24, 28);
             this.label2.TabIndex = 31;
             this.label2.Text = "$";
             // 
             // FrmAgregarProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(838, 458);
+            this.ClientSize = new System.Drawing.Size(745, 343);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cmbCategoria);
@@ -269,12 +302,14 @@
             this.Controls.Add(this.LabelNombreFormularioAgregarProducto);
             this.Controls.Add(this.LabelCodigoFormularioAgregarProducto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmAgregarProductos";
             this.Text = "FrmAgregarProductos";
             this.Load += new System.EventHandler(this.FrmAgregarProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.BarraTituloFormularioAgregarProducto.ResumeLayout(false);
             this.BarraTituloFormularioAgregarProducto.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxLogoFormularioAgregarProducto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PtbCerrarFormularioAgregarProductos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -290,6 +325,8 @@
         private System.Windows.Forms.Button ButtonGuardarAgregarProducto;
         private System.Windows.Forms.Panel BarraTituloFormularioAgregarProducto;
         public System.Windows.Forms.Label LabelVerAgregarProducto;
+        private System.Windows.Forms.Label LabelCerrarSesion;
+        private System.Windows.Forms.PictureBox PictureBoxLogoFormularioAgregarProducto;
         private System.Windows.Forms.PictureBox PtbCerrarFormularioAgregarProductos;
         public System.Windows.Forms.TextBox TxtNombreProducto;
         public System.Windows.Forms.TextBox txtcantidadProducto;
