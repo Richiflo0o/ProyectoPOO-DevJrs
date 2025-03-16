@@ -190,6 +190,7 @@
             // 
             // DGVVERINSTRUCTORES
             // 
+            this.DGVVERINSTRUCTORES.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.DGVVERINSTRUCTORES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVVERINSTRUCTORES.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGVVERINSTRUCTORES.Location = new System.Drawing.Point(0, 104);
