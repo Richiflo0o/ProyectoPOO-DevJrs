@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\csConectaSQL.cs" />
+    <Compile Include="Formularios\FrmAgregarInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmAgregarInstructor.Designer.cs">
+      <DependentUpon>FrmAgregarInstructor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmAgregarPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,11 +83,11 @@
     <Compile Include="Formularios\FrmControlAcceso.Designer.cs">
       <DependentUpon>FrmControlAcceso.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmInstructores.cs">
+    <Compile Include="Formularios\FrmVerInstructores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmInstructores.Designer.cs">
-      <DependentUpon>FrmInstructores.cs</DependentUpon>
+    <Compile Include="Formularios\FrmVerInstructores.Designer.cs">
+      <DependentUpon>FrmVerInstructores.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FrmListadoUsuario.cs">
       <SubType>Form</SubType>
@@ -121,6 +127,9 @@
       <DependentUpon>FrmVerListadoProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\FrmAgregarInstructor.resx">
+      <DependentUpon>FrmAgregarInstructor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmAgregarPerfil.resx">
       <DependentUpon>FrmAgregarPerfil.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmProveedores.resx">
       <DependentUpon>FrmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmVerInstructores.resx">
+      <DependentUpon>FrmVerInstructores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmVerListadoProductos.resx">
       <DependentUpon>FrmVerListadoProductos.cs</DependentUpon>

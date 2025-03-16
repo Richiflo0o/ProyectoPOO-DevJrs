@@ -16,5 +16,10 @@ namespace ProyectoPOO.Formularios
         {
             InitializeComponent();
         }
+
+        private void DGVListadoProveedores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -200,6 +200,7 @@
             this.DGVListadoProveedores.RowTemplate.Height = 28;
             this.DGVListadoProveedores.Size = new System.Drawing.Size(969, 607);
             this.DGVListadoProveedores.TabIndex = 37;
+            this.DGVListadoProveedores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVListadoProveedores_CellContentClick);
             // 
             // FrmProveedores
             // 

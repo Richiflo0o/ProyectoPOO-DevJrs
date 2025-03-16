@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoPOO.Formularios
 {
-    public partial class FrmInstructores : Form
+    public partial class FrmVerInstructores : Form
     {
-        public FrmInstructores()
+        public FrmVerInstructores()
         {
             InitializeComponent();
         }
