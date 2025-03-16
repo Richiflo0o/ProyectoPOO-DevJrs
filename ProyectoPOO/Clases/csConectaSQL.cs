@@ -60,6 +60,27 @@ namespace AplicacionGym
                 return false;
             }
         }
+        public DataTable retornaRegistros(string Sentencia)
+        {
+            try
+            {
+                if (Sentencia.Length > 0)
+                {
+                    abrirConexion();
+                    oCom = new SqlCommand(Sentencia, oCon);
+                    oDA = new SqlDataAdapter(oCom);
+                    oDT = new DataTable();
+                    oDA.Fill(oDT);
+                    cerrarConexion();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return oDT;
+        }
 
     }
 
