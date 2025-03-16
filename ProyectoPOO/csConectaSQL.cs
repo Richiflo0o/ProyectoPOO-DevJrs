@@ -8,12 +8,10 @@ using System.Threading.Tasks;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace AplicacionGym
+namespace ProyectoPOO
 {
     public class csConectaSQL
     {
-
-
         public SqlConnection oCon;
         public SqlCommand oCom;
         public SqlDataReader oDR;
@@ -25,12 +23,13 @@ namespace AplicacionGym
         string Usuario;
         string Clave;
         string Cadena;
+
         public csConectaSQL()
         {
-            Server = @"DESKTOP-ULDUU6I\SQLEXPRESS01";
+            Server = @"DESKTOP-22RT09N\SQLEXPRESS";
             Database = "FitMaxBD";
             Usuario = "sa";
-            Clave = "1234";
+            Clave = "123456";
         }
 
         public csConectaSQL(string Server, string Database, string Usuario, string Clave)
@@ -55,13 +54,11 @@ namespace AplicacionGym
             }
             return true;
         }
-
         public bool cerrarConexion()
         {
             oCon.Close();
             return true;
         }
-
         public bool eliminarDatos(string Tabla, string Condicion)
         {
             try
@@ -78,7 +75,6 @@ namespace AplicacionGym
             }
             return true;
         }
-
         public bool ModificarDatos(string cadena)
         {
             try
@@ -95,9 +91,6 @@ namespace AplicacionGym
                 return false;
             }
         }
-
-
-
         public bool insertarDatos(string Tabla, string Campos, string Datos)
         {
             abrirConexion();
@@ -107,7 +100,6 @@ namespace AplicacionGym
             cerrarConexion();
             return true;
         }
-
         public bool ejecutarSQL(string Sentencia)
         {
             abrirConexion();
@@ -116,8 +108,6 @@ namespace AplicacionGym
             cerrarConexion();
             return true;
         }
-
-
         public int retornaValor(string Seleccion, string Tabla, string Condicion)
         {
             int temporal;
@@ -131,7 +121,6 @@ namespace AplicacionGym
             cerrarConexion();
             return temporal;
         }
-
         public String retornaCadena(string Seleccion, string Tabla, string Condicion)
         {
             string temporal;
@@ -152,7 +141,6 @@ namespace AplicacionGym
             cerrarConexion();
             return temporal;
         }
-
         public string retornaCadenaConsulta(string Consulta)
         {
             string temporal;
@@ -171,22 +159,16 @@ namespace AplicacionGym
             try
             {
                 abrirConexion();
-
-
                 string queryInsert = $"INSERT INTO {Tabla} ({Campos}) VALUES ({Datos});";
                 oCom = new SqlCommand(queryInsert, oCon);
                 oCom.ExecuteNonQuery();
-
-
                 string queryID = "SELECT SCOPE_IDENTITY();";
                 oCom = new SqlCommand(queryID, oCon);
                 oDR = oCom.ExecuteReader();
-
                 if (oDR.Read())
                 {
                     idGenerado = Convert.ToInt32(oDR[0]);
                 }
-
                 oDR.Close();
                 cerrarConexion();
             }
@@ -194,12 +176,8 @@ namespace AplicacionGym
             {
                 MessageBox.Show("Error al insertar datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
             return idGenerado;
         }
-
-
-
         public decimal retornaValorConsulta(string Consulta)
         {
             decimal temporal;
@@ -212,7 +190,6 @@ namespace AplicacionGym
             cerrarConexion();
             return temporal;
         }
-
         public DataTable retornaRegistros(string Sentencia)
         {
             try
@@ -226,7 +203,6 @@ namespace AplicacionGym
                     oDA.Fill(oDT);
                     cerrarConexion();
                 }
-                
             }
             catch (Exception ex)
             {
@@ -260,6 +236,32 @@ namespace AplicacionGym
                 MessageBox.Show("Upsss algo salio mal vuelve a intentarlo");
             }
         }
+        public void LlenarToolStripComboBox(ToolStripComboBox cmb, string Seleccion, string Tabla)
+        {
+            try
+            {
+                abrirConexion();
+
+                string Cadena = $"SELECT {Seleccion} FROM {Tabla}";
+
+                SqlCommand oCom = new SqlCommand(Cadena, oCon);
+                SqlDataReader oDR = oCom.ExecuteReader();
+
+                cmb.ComboBox.Items.Clear(); // Accede al ComboBox interno
+
+                while (oDR.Read())
+                {
+                    cmb.ComboBox.Items.Add(oDR[0].ToString()); // Accede al ComboBox interno
+                }
+
+                oDR.Close();
+                cerrarConexion();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error en LlenarToolStripComboBox: {ex.Message}");
+            }
+        }
         public bool ExisteCedula(string cedula)
         {
             bool existe = false;
@@ -286,35 +288,20 @@ namespace AplicacionGym
         public void CancelarPago(int idPago)
 
         {
-
             csConectaSQL conexion = new csConectaSQL();
 
             string condicion = $"IdPago = {idPago}"; // Cambia "IdPago" por el nombre real de la columna que identifica el pago
 
             string sentencia = $"UPDATE Pagos SET Estado = 'Cancelado' WHERE {condicion}"; // Cambia "Pagos" y "Estado" según tu estructura
-
-
             if (conexion.ModificarDatos(sentencia))
-
             {
-
                 MessageBox.Show("Pago cancelado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
             }
-
             else
-
             {
-
                 MessageBox.Show("Error al cancelar el pago.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
             }
-
         }
-
-
-
     }
-
 }
 

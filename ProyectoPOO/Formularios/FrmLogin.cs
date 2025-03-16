@@ -16,7 +16,6 @@ namespace ProyectoPOO.Formularios
         {
             InitializeComponent();
         }
-
         private void PtbCerrarInicioSesion_Click(object sender, EventArgs e)
         {
             Application.Exit(); 

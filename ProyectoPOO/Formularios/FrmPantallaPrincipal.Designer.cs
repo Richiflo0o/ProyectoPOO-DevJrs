@@ -49,12 +49,12 @@
             this.tsmiNuevoInstructor = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiCaja = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiVerCaja = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiCobrarUnaClase = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiEstadisticas = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiPagosRealizados = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiProductos = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAgregarProducto = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiVerProductos = new System.Windows.Forms.ToolStripMenuItem();
-            this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiEstadisticas = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiPagosRealizados = new System.Windows.Forms.ToolStripMenuItem();
             this.pciContenedor = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbMaximizar)).BeginInit();
@@ -75,9 +75,9 @@
             this.panel1.Controls.Add(this.PtbCerrarFmrPrincipal);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1290, 62);
+            this.panel1.Size = new System.Drawing.Size(860, 40);
             this.panel1.TabIndex = 3;
             // 
             // ptbMaximizar
@@ -85,10 +85,10 @@
             this.ptbMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ptbMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("ptbMaximizar.Image")));
-            this.ptbMaximizar.Location = new System.Drawing.Point(1204, 11);
-            this.ptbMaximizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ptbMaximizar.Location = new System.Drawing.Point(803, 7);
+            this.ptbMaximizar.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.ptbMaximizar.Name = "ptbMaximizar";
-            this.ptbMaximizar.Size = new System.Drawing.Size(34, 35);
+            this.ptbMaximizar.Size = new System.Drawing.Size(23, 23);
             this.ptbMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbMaximizar.TabIndex = 4;
             this.ptbMaximizar.TabStop = false;
@@ -98,9 +98,10 @@
             this.lblRolUsuario.AutoSize = true;
             this.lblRolUsuario.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRolUsuario.ForeColor = System.Drawing.Color.Gold;
-            this.lblRolUsuario.Location = new System.Drawing.Point(782, 15);
+            this.lblRolUsuario.Location = new System.Drawing.Point(521, 10);
+            this.lblRolUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRolUsuario.Name = "lblRolUsuario";
-            this.lblRolUsuario.Size = new System.Drawing.Size(185, 30);
+            this.lblRolUsuario.Size = new System.Drawing.Size(128, 19);
             this.lblRolUsuario.TabIndex = 6;
             this.lblRolUsuario.Text = "Perfil De Usuario";
             // 
@@ -109,9 +110,10 @@
             this.lblCerrarSesion.AutoSize = true;
             this.lblCerrarSesion.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCerrarSesion.ForeColor = System.Drawing.Color.White;
-            this.lblCerrarSesion.Location = new System.Drawing.Point(999, 15);
+            this.lblCerrarSesion.Location = new System.Drawing.Point(666, 10);
+            this.lblCerrarSesion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCerrarSesion.Name = "lblCerrarSesion";
-            this.lblCerrarSesion.Size = new System.Drawing.Size(135, 30);
+            this.lblCerrarSesion.Size = new System.Drawing.Size(90, 19);
             this.lblCerrarSesion.TabIndex = 5;
             this.lblCerrarSesion.Text = "Cerrar Sesion";
             // 
@@ -120,10 +122,10 @@
             this.ptbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ptbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("ptbMinimizar.Image")));
-            this.ptbMinimizar.Location = new System.Drawing.Point(1162, 11);
-            this.ptbMinimizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ptbMinimizar.Location = new System.Drawing.Point(775, 7);
+            this.ptbMinimizar.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.ptbMinimizar.Name = "ptbMinimizar";
-            this.ptbMinimizar.Size = new System.Drawing.Size(34, 35);
+            this.ptbMinimizar.Size = new System.Drawing.Size(23, 23);
             this.ptbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbMinimizar.TabIndex = 2;
             this.ptbMinimizar.TabStop = false;
@@ -132,10 +134,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.SeaGreen;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-27, -5);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(-18, -3);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(266, 65);
+            this.pictureBox2.Size = new System.Drawing.Size(177, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -145,10 +147,10 @@
             this.PtbCerrarFmrPrincipal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PtbCerrarFmrPrincipal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PtbCerrarFmrPrincipal.Image = ((System.Drawing.Image)(resources.GetObject("PtbCerrarFmrPrincipal.Image")));
-            this.PtbCerrarFmrPrincipal.Location = new System.Drawing.Point(1246, 9);
-            this.PtbCerrarFmrPrincipal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PtbCerrarFmrPrincipal.Location = new System.Drawing.Point(831, 6);
+            this.PtbCerrarFmrPrincipal.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.PtbCerrarFmrPrincipal.Name = "PtbCerrarFmrPrincipal";
-            this.PtbCerrarFmrPrincipal.Size = new System.Drawing.Size(34, 35);
+            this.PtbCerrarFmrPrincipal.Size = new System.Drawing.Size(23, 23);
             this.PtbCerrarFmrPrincipal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PtbCerrarFmrPrincipal.TabIndex = 1;
             this.PtbCerrarFmrPrincipal.TabStop = false;
@@ -158,7 +160,6 @@
             // 
             this.menuStrip1.AutoSize = false;
             this.menuStrip1.BackColor = System.Drawing.Color.White;
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiPerfilUsuarios,
@@ -168,10 +169,10 @@
             this.tsmiCaja,
             this.tsmiProductos,
             this.tsmiEstadisticas});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 62);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 40);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1290, 48);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(860, 31);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -181,13 +182,13 @@
             this.tsmiListaDeUsuarios});
             this.tsmiPerfilUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("tsmiPerfilUsuarios.Image")));
             this.tsmiPerfilUsuarios.Name = "tsmiPerfilUsuarios";
-            this.tsmiPerfilUsuarios.Size = new System.Drawing.Size(163, 44);
+            this.tsmiPerfilUsuarios.Size = new System.Drawing.Size(118, 29);
             this.tsmiPerfilUsuarios.Text = "Perfil Usuarios";
             // 
             // tsmiListaDeUsuarios
             // 
             this.tsmiListaDeUsuarios.Name = "tsmiListaDeUsuarios";
-            this.tsmiListaDeUsuarios.Size = new System.Drawing.Size(270, 34);
+            this.tsmiListaDeUsuarios.Size = new System.Drawing.Size(180, 22);
             this.tsmiListaDeUsuarios.Text = "Agregar Perfil";
             // 
             // tsmiUsuarios
@@ -197,19 +198,19 @@
             this.tsmiAsistencia});
             this.tsmiUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("tsmiUsuarios.Image")));
             this.tsmiUsuarios.Name = "tsmiUsuarios";
-            this.tsmiUsuarios.Size = new System.Drawing.Size(120, 44);
+            this.tsmiUsuarios.Size = new System.Drawing.Size(88, 29);
             this.tsmiUsuarios.Text = "Usuarios";
             // 
             // tsmiListadoDeUsuarios
             // 
             this.tsmiListadoDeUsuarios.Name = "tsmiListadoDeUsuarios";
-            this.tsmiListadoDeUsuarios.Size = new System.Drawing.Size(270, 34);
+            this.tsmiListadoDeUsuarios.Size = new System.Drawing.Size(180, 22);
             this.tsmiListadoDeUsuarios.Text = "Listado de Usuarios";
             // 
             // tsmiAsistencia
             // 
             this.tsmiAsistencia.Name = "tsmiAsistencia";
-            this.tsmiAsistencia.Size = new System.Drawing.Size(270, 34);
+            this.tsmiAsistencia.Size = new System.Drawing.Size(180, 22);
             this.tsmiAsistencia.Text = "Asistencia";
             // 
             // tsmiMembresia
@@ -219,19 +220,19 @@
             this.tsmiListaMembresias});
             this.tsmiMembresia.Image = ((System.Drawing.Image)(resources.GetObject("tsmiMembresia.Image")));
             this.tsmiMembresia.Name = "tsmiMembresia";
-            this.tsmiMembresia.Size = new System.Drawing.Size(140, 44);
+            this.tsmiMembresia.Size = new System.Drawing.Size(102, 29);
             this.tsmiMembresia.Text = "Membresia";
             // 
             // tsmiAggMembresia
             // 
             this.tsmiAggMembresia.Name = "tsmiAggMembresia";
-            this.tsmiAggMembresia.Size = new System.Drawing.Size(275, 34);
+            this.tsmiAggMembresia.Size = new System.Drawing.Size(181, 22);
             this.tsmiAggMembresia.Text = "Agregar Membresia";
             // 
             // tsmiListaMembresias
             // 
             this.tsmiListaMembresias.Name = "tsmiListaMembresias";
-            this.tsmiListaMembresias.Size = new System.Drawing.Size(275, 34);
+            this.tsmiListaMembresias.Size = new System.Drawing.Size(181, 22);
             this.tsmiListaMembresias.Text = "Lista de Membresias";
             // 
             // tsmiInstructores
@@ -240,58 +241,36 @@
             this.tsmiNuevoInstructor});
             this.tsmiInstructores.Image = ((System.Drawing.Image)(resources.GetObject("tsmiInstructores.Image")));
             this.tsmiInstructores.Name = "tsmiInstructores";
-            this.tsmiInstructores.Size = new System.Drawing.Size(145, 44);
+            this.tsmiInstructores.Size = new System.Drawing.Size(105, 29);
             this.tsmiInstructores.Text = "Instructores";
             // 
             // tsmiNuevoInstructor
             // 
             this.tsmiNuevoInstructor.Name = "tsmiNuevoInstructor";
-            this.tsmiNuevoInstructor.Size = new System.Drawing.Size(270, 34);
+            this.tsmiNuevoInstructor.Size = new System.Drawing.Size(180, 22);
             this.tsmiNuevoInstructor.Text = "Nuevo Instructor";
             // 
             // tsmiCaja
             // 
             this.tsmiCaja.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiVerCaja});
+            this.tsmiVerCaja,
+            this.tsmiCobrarUnaClase});
             this.tsmiCaja.Image = ((System.Drawing.Image)(resources.GetObject("tsmiCaja.Image")));
             this.tsmiCaja.Name = "tsmiCaja";
-            this.tsmiCaja.Size = new System.Drawing.Size(85, 44);
+            this.tsmiCaja.Size = new System.Drawing.Size(66, 29);
             this.tsmiCaja.Text = "Caja";
             // 
             // tsmiVerCaja
             // 
             this.tsmiVerCaja.Name = "tsmiVerCaja";
-            this.tsmiVerCaja.Size = new System.Drawing.Size(270, 34);
+            this.tsmiVerCaja.Size = new System.Drawing.Size(180, 22);
             this.tsmiVerCaja.Text = "Ver caja";
             // 
-            // tsmiProductos
+            // tsmiCobrarUnaClase
             // 
-            this.tsmiProductos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiAgregarProducto,
-            this.tsmiVerProductos,
-            this.proveedoresToolStripMenuItem});
-            this.tsmiProductos.Image = ((System.Drawing.Image)(resources.GetObject("tsmiProductos.Image")));
-            this.tsmiProductos.Name = "tsmiProductos";
-            this.tsmiProductos.Size = new System.Drawing.Size(133, 44);
-            this.tsmiProductos.Text = "Productos";
-            // 
-            // tsmiAgregarProducto
-            // 
-            this.tsmiAgregarProducto.Name = "tsmiAgregarProducto";
-            this.tsmiAgregarProducto.Size = new System.Drawing.Size(270, 34);
-            this.tsmiAgregarProducto.Text = "Agregar Producto";
-            // 
-            // tsmiVerProductos
-            // 
-            this.tsmiVerProductos.Name = "tsmiVerProductos";
-            this.tsmiVerProductos.Size = new System.Drawing.Size(270, 34);
-            this.tsmiVerProductos.Text = "Ver Productos";
-            // 
-            // proveedoresToolStripMenuItem
-            // 
-            this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.proveedoresToolStripMenuItem.Text = "Proveedores";
+            this.tsmiCobrarUnaClase.Name = "tsmiCobrarUnaClase";
+            this.tsmiCobrarUnaClase.Size = new System.Drawing.Size(180, 22);
+            this.tsmiCobrarUnaClase.Text = "Cobrar una clase";
             // 
             // tsmiEstadisticas
             // 
@@ -299,34 +278,56 @@
             this.tsmiPagosRealizados});
             this.tsmiEstadisticas.Image = ((System.Drawing.Image)(resources.GetObject("tsmiEstadisticas.Image")));
             this.tsmiEstadisticas.Name = "tsmiEstadisticas";
-            this.tsmiEstadisticas.Size = new System.Drawing.Size(122, 44);
-            this.tsmiEstadisticas.Text = "Reportes";
+            this.tsmiEstadisticas.Size = new System.Drawing.Size(103, 29);
+            this.tsmiEstadisticas.Text = "Estadisticas";
             // 
             // tsmiPagosRealizados
             // 
             this.tsmiPagosRealizados.Name = "tsmiPagosRealizados";
-            this.tsmiPagosRealizados.Size = new System.Drawing.Size(250, 34);
+            this.tsmiPagosRealizados.Size = new System.Drawing.Size(180, 22);
             this.tsmiPagosRealizados.Text = "Pagos Realizados";
+            // 
+            // tsmiProductos
+            // 
+            this.tsmiProductos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiAgregarProducto,
+            this.tsmiVerProductos});
+            this.tsmiProductos.Image = ((System.Drawing.Image)(resources.GetObject("tsmiProductos.Image")));
+            this.tsmiProductos.Name = "tsmiProductos";
+            this.tsmiProductos.Size = new System.Drawing.Size(97, 29);
+            this.tsmiProductos.Text = "Productos";
+            // 
+            // tsmiAgregarProducto
+            // 
+            this.tsmiAgregarProducto.Name = "tsmiAgregarProducto";
+            this.tsmiAgregarProducto.Size = new System.Drawing.Size(180, 22);
+            this.tsmiAgregarProducto.Text = "Agregar Producto";
+            // 
+            // tsmiVerProductos
+            // 
+            this.tsmiVerProductos.Name = "tsmiVerProductos";
+            this.tsmiVerProductos.Size = new System.Drawing.Size(180, 22);
+            this.tsmiVerProductos.Text = "Ver Productos";
             // 
             // pciContenedor
             // 
             this.pciContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pciContenedor.Location = new System.Drawing.Point(0, 110);
-            this.pciContenedor.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.pciContenedor.Location = new System.Drawing.Point(0, 71);
+            this.pciContenedor.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pciContenedor.Name = "pciContenedor";
-            this.pciContenedor.Size = new System.Drawing.Size(1290, 658);
+            this.pciContenedor.Size = new System.Drawing.Size(860, 428);
             this.pciContenedor.TabIndex = 7;
             // 
             // FrmPantallaPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1290, 768);
+            this.ClientSize = new System.Drawing.Size(860, 499);
             this.Controls.Add(this.pciContenedor);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmPantallaPrincipal";
             this.Text = "FrmPantallaPrincipal";
             this.panel1.ResumeLayout(false);
@@ -363,12 +364,12 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiNuevoInstructor;
         private System.Windows.Forms.ToolStripMenuItem tsmiCaja;
         private System.Windows.Forms.ToolStripMenuItem tsmiVerCaja;
+        private System.Windows.Forms.ToolStripMenuItem tsmiCobrarUnaClase;
         private System.Windows.Forms.ToolStripMenuItem tsmiEstadisticas;
         private System.Windows.Forms.ToolStripMenuItem tsmiPagosRealizados;
         private System.Windows.Forms.ToolStripMenuItem tsmiProductos;
         private System.Windows.Forms.ToolStripMenuItem tsmiAgregarProducto;
         private System.Windows.Forms.ToolStripMenuItem tsmiVerProductos;
         private System.Windows.Forms.Panel pciContenedor;
-        private System.Windows.Forms.ToolStripMenuItem proveedoresToolStripMenuItem;
     }
 }
