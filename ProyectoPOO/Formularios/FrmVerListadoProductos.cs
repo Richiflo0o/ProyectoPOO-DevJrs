@@ -22,7 +22,15 @@ namespace ProyectoPOO.Formularios
         }
         private void btnModificarSocio_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(IdentificadorSistema))
+            {
+                MessageBox.Show("Seleccione un producto para modificar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            FrmAgregarProductos frmEditar = new FrmAgregarProductos();
+            frmEditar.ShowDialog();
+            CargarProductos();
         }
 
         private void CargarProductos()
@@ -63,6 +71,16 @@ namespace ProyectoPOO.Formularios
             FrmAgregarProductos agregar = new FrmAgregarProductos();
             agregar.Show();
             this.Hide();
+        }
+
+        private void DVGProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = DVGProductos.Rows[e.RowIndex];
+
+                IdentificadorSistema = row.Cells["id_producto"].Value.ToString();
+            }
         }
     }
 }

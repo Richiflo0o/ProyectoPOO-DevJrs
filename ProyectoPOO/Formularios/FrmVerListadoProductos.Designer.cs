@@ -214,6 +214,7 @@
             this.DVGProductos.RowTemplate.Height = 28;
             this.DVGProductos.Size = new System.Drawing.Size(981, 379);
             this.DVGProductos.TabIndex = 37;
+            this.DVGProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DVGProductos_CellContentClick);
             // 
             // FrmVerListadoProductos
             // 
