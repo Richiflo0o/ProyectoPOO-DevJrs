@@ -47,124 +47,130 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\csConectaSQL.cs" />
-    <Compile Include="Clases\cUsuarios.cs" />
-    <Compile Include="Formularios\FrmAgregarInstructor.cs">
+    <Compile Include="Clases\Usuario.cs" />
+    <Compile Include="formularios\FrmAsistencia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmAgregarInstructor.Designer.cs">
-      <DependentUpon>FrmAgregarInstructor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\FrmAgregarPerfil.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\FrmAgregarPerfil.Designer.cs">
-      <DependentUpon>FrmAgregarPerfil.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\FrmAgregarProductos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\FrmAgregarProductos.Designer.cs">
-      <DependentUpon>FrmAgregarProductos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\FrmAgregarUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\FrmAgregarUsuario.Designer.cs">
-      <DependentUpon>FrmAgregarUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\FrmAsistencia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\FrmAsistencia.Designer.cs">
+    <Compile Include="formularios\FrmAsistencia.Designer.cs">
       <DependentUpon>FrmAsistencia.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmControlAcceso.cs">
+    <Compile Include="Clases\Program.cs" />
+    <Compile Include="formularios\FrmAgregarPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmControlAcceso.Designer.cs">
+    <Compile Include="formularios\FrmAgregarPerfil.Designer.cs">
+      <DependentUpon>FrmAgregarPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FrmAgregarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FrmAgregarProductos.Designer.cs">
+      <DependentUpon>FrmAgregarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FrmAgregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FrmAgregarUsuario.Designer.cs">
+      <DependentUpon>FrmAgregarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FrmControlAcceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FrmControlAcceso.Designer.cs">
       <DependentUpon>FrmControlAcceso.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmVerInstructores.cs">
+    <Compile Include="formularios\FrmInstructores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmVerInstructores.Designer.cs">
-      <DependentUpon>FrmVerInstructores.cs</DependentUpon>
+    <Compile Include="formularios\FrmInstructores.Designer.cs">
+      <DependentUpon>FrmInstructores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmListadoUsuario.cs">
+    <Compile Include="formularios\FrmListadoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmListadoUsuario.Designer.cs">
+    <Compile Include="formularios\FrmListadoUsuario.Designer.cs">
       <DependentUpon>FrmListadoUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmLogin.cs">
+    <Compile Include="formularios\FrmListaUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmLogin.Designer.cs">
+    <Compile Include="formularios\FrmListaUsuarios.Designer.cs">
+      <DependentUpon>FrmListaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmMembresia.cs">
+    <Compile Include="formularios\FrmMembresia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmMembresia.Designer.cs">
+    <Compile Include="formularios\FrmMembresia.Designer.cs">
       <DependentUpon>FrmMembresia.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmPantallaPrincipal.cs">
+    <Compile Include="formularios\FrmPantallaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmPantallaPrincipal.Designer.cs">
+    <Compile Include="formularios\FrmPantallaPrincipal.Designer.cs">
       <DependentUpon>FrmPantallaPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Clases\Program.cs" />
-    <Compile Include="Formularios\FrmProveedores.cs">
+    <Compile Include="formularios\FrmProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmProveedores.Designer.cs">
+    <Compile Include="formularios\FrmProveedores.Designer.cs">
       <DependentUpon>FrmProveedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmVerListadoProductos.cs">
+    <Compile Include="formularios\FrmVerInstructores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmVerListadoProductos.Designer.cs">
+    <Compile Include="formularios\FrmVerInstructores.Designer.cs">
+      <DependentUpon>FrmVerInstructores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FrmVerListadoProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FrmVerListadoProductos.Designer.cs">
       <DependentUpon>FrmVerListadoProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\FrmAgregarInstructor.resx">
-      <DependentUpon>FrmAgregarInstructor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmAgregarPerfil.resx">
-      <DependentUpon>FrmAgregarPerfil.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmAgregarProductos.resx">
-      <DependentUpon>FrmAgregarProductos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmAgregarUsuario.resx">
-      <DependentUpon>FrmAgregarUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmAsistencia.resx">
+    <EmbeddedResource Include="formularios\FrmAsistencia.resx">
       <DependentUpon>FrmAsistencia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmControlAcceso.resx">
+    <EmbeddedResource Include="formularios\FrmAgregarPerfil.resx">
+      <DependentUpon>FrmAgregarPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FrmAgregarProductos.resx">
+      <DependentUpon>FrmAgregarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FrmAgregarUsuario.resx">
+      <DependentUpon>FrmAgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FrmControlAcceso.resx">
       <DependentUpon>FrmControlAcceso.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmListadoUsuario.resx">
+    <EmbeddedResource Include="formularios\FrmListadoUsuario.resx">
       <DependentUpon>FrmListadoUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmLogin.resx">
+    <EmbeddedResource Include="formularios\FrmListaUsuarios.resx">
+      <DependentUpon>FrmListaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmMembresia.resx">
+    <EmbeddedResource Include="formularios\FrmMembresia.resx">
       <DependentUpon>FrmMembresia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmPantallaPrincipal.resx">
+    <EmbeddedResource Include="formularios\FrmPantallaPrincipal.resx">
       <DependentUpon>FrmPantallaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmProveedores.resx">
+    <EmbeddedResource Include="formularios\FrmProveedores.resx">
       <DependentUpon>FrmProveedores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmVerInstructores.resx">
+    <EmbeddedResource Include="formularios\FrmVerInstructores.resx">
       <DependentUpon>FrmVerInstructores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmVerListadoProductos.resx">
+    <EmbeddedResource Include="formularios\FrmVerListadoProductos.resx">
       <DependentUpon>FrmVerListadoProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

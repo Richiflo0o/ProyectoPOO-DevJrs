@@ -83,7 +83,7 @@ namespace ProyectoPOO.Formularios
 
         private void btnCerrarListadoPerfil_Click(object sender, EventArgs e)
         {
-            FrmPantallaPrincipal regresar = new FrmPantallaPrincipal();
+            FrmPantallaPrincipal regresar = new FrmPantallaPrincipal("Usuario");
             regresar.Show();
             this.Hide();
         }

@@ -12,9 +12,13 @@ namespace ProyectoPOO.Formularios
 {
     public partial class FrmPantallaPrincipal : Form
     {
-        public FrmPantallaPrincipal()
+        private string tipoUsuario; 
+
+        public FrmPantallaPrincipal(string tipoUsuario)
         {
             InitializeComponent();
+            this.tipoUsuario = tipoUsuario; 
+            ConfigurarInterfaz(); 
         }
         private void PtbCerrarFormularioPrincipal_Click(object sender, EventArgs e)
         {
@@ -34,5 +38,18 @@ namespace ProyectoPOO.Formularios
             listadousaurio.Show();
             this.Hide();
         }
-    }
+        private void ConfigurarInterfaz()
+        {
+            if (tipoUsuario == "Usuario")
+            {
+                tsmiPerfilUsuarios.Visible = false;
+                tsmiUsuarios.Visible = false;
+                tsmiEstadisticas.Visible = false;
+            }
+            else if (tipoUsuario == "Administrador")
+            {
+
+            }
+        }
+        }
 }

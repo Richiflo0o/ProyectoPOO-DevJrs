@@ -15,17 +15,17 @@ namespace ProyectoPOO.Formularios
 {
     public partial class FrmAgregarPerfil : Form
     {
-        private cUsuarios objUsuario;
+        private Usuario objUsuario;
         private bool esEdicion = false;
         public FrmAgregarPerfil()
         {
             InitializeComponent();
-            objUsuario = new cUsuarios();
+            objUsuario = new Usuario();
         }
         public FrmAgregarPerfil(string identificacion)
         {
             InitializeComponent();
-            objUsuario = new cUsuarios();
+            objUsuario = new Usuario();
             objUsuario.Identificacion = identificacion;
             esEdicion = true;
             CargarDatosUsuario();
@@ -97,7 +97,7 @@ namespace ProyectoPOO.Formularios
 
         private void PtbCerrarFormularioAgregarUsuario_Click(object sender, EventArgs e)
         {
-            FrmPantallaPrincipal regresar = new FrmPantallaPrincipal();
+            FrmPantallaPrincipal regresar = new FrmPantallaPrincipal("Usuario");
             regresar.Show();
             this.Hide();
 
@@ -116,7 +116,7 @@ namespace ProyectoPOO.Formularios
         }
         private void CrearUsuario()
         {
-            cUsuarios nuevoUsuario = new cUsuarios
+            Usuario nuevoUsuario = new Usuario
             {
                 Identificacion = TxtBoxIdentifiacion.Text,
                 Nombres = TxtBoxNombreUsuario.Text,

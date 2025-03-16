@@ -66,7 +66,7 @@
             this.BarraTituloNuevoPlan.Location = new System.Drawing.Point(0, 0);
             this.BarraTituloNuevoPlan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BarraTituloNuevoPlan.Name = "BarraTituloNuevoPlan";
-            this.BarraTituloNuevoPlan.Size = new System.Drawing.Size(850, 62);
+            this.BarraTituloNuevoPlan.Size = new System.Drawing.Size(756, 50);
             this.BarraTituloNuevoPlan.TabIndex = 6;
             // 
             // frmVerMembresias
@@ -74,9 +74,9 @@
             this.frmVerMembresias.AutoSize = true;
             this.frmVerMembresias.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frmVerMembresias.ForeColor = System.Drawing.Color.White;
-            this.frmVerMembresias.Location = new System.Drawing.Point(321, 6);
+            this.frmVerMembresias.Location = new System.Drawing.Point(285, 5);
             this.frmVerMembresias.Name = "frmVerMembresias";
-            this.frmVerMembresias.Size = new System.Drawing.Size(230, 48);
+            this.frmVerMembresias.Size = new System.Drawing.Size(189, 41);
             this.frmVerMembresias.TabIndex = 2;
             this.frmVerMembresias.Text = "MEMBRESIAS";
             // 
@@ -84,10 +84,10 @@
             // 
             this.imgLogo.BackColor = System.Drawing.Color.SeaGreen;
             this.imgLogo.Image = ((System.Drawing.Image)(resources.GetObject("imgLogo.Image")));
-            this.imgLogo.Location = new System.Drawing.Point(-27, -5);
+            this.imgLogo.Location = new System.Drawing.Point(-24, -4);
             this.imgLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgLogo.Name = "imgLogo";
-            this.imgLogo.Size = new System.Drawing.Size(266, 65);
+            this.imgLogo.Size = new System.Drawing.Size(236, 52);
             this.imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgLogo.TabIndex = 0;
             this.imgLogo.TabStop = false;
@@ -97,10 +97,10 @@
             this.PtbCerrarFrmMembresia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PtbCerrarFrmMembresia.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PtbCerrarFrmMembresia.Image = ((System.Drawing.Image)(resources.GetObject("PtbCerrarFrmMembresia.Image")));
-            this.PtbCerrarFrmMembresia.Location = new System.Drawing.Point(802, 14);
+            this.PtbCerrarFrmMembresia.Location = new System.Drawing.Point(713, 11);
             this.PtbCerrarFrmMembresia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PtbCerrarFrmMembresia.Name = "PtbCerrarFrmMembresia";
-            this.PtbCerrarFrmMembresia.Size = new System.Drawing.Size(33, 35);
+            this.PtbCerrarFrmMembresia.Size = new System.Drawing.Size(29, 28);
             this.PtbCerrarFrmMembresia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PtbCerrarFrmMembresia.TabIndex = 1;
             this.PtbCerrarFrmMembresia.TabStop = false;
@@ -110,10 +110,10 @@
             // 
             this.txtDescripcion.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtDescripcion.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(295, 185);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtDescripcion.Location = new System.Drawing.Point(262, 148);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(238, 36);
+            this.txtDescripcion.Size = new System.Drawing.Size(212, 31);
             this.txtDescripcion.TabIndex = 66;
             // 
             // label2
@@ -121,10 +121,10 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(111, 185);
+            this.label2.Location = new System.Drawing.Point(99, 148);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(176, 36);
+            this.label2.Size = new System.Drawing.Size(150, 31);
             this.label2.TabIndex = 71;
             this.label2.Text = "Descripcion:";
             // 
@@ -136,12 +136,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvMembresia.BackgroundColor = System.Drawing.Color.White;
             this.dgvMembresia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMembresia.Location = new System.Drawing.Point(15, 352);
-            this.dgvMembresia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvMembresia.Location = new System.Drawing.Point(13, 282);
+            this.dgvMembresia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvMembresia.Name = "dgvMembresia";
             this.dgvMembresia.ReadOnly = true;
             this.dgvMembresia.RowHeadersWidth = 62;
-            this.dgvMembresia.Size = new System.Drawing.Size(820, 294);
+            this.dgvMembresia.Size = new System.Drawing.Size(729, 235);
             this.dgvMembresia.TabIndex = 70;
             // 
             // label1
@@ -149,9 +149,9 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(288, 239);
+            this.label1.Location = new System.Drawing.Point(256, 191);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 37);
+            this.label1.Size = new System.Drawing.Size(30, 31);
             this.label1.TabIndex = 69;
             this.label1.Text = "$";
             // 
@@ -164,52 +164,52 @@
             "Semanas",
             "Meses",
             "Años"});
-            this.cbmDuracionMembresia.Location = new System.Drawing.Point(353, 301);
-            this.cbmDuracionMembresia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbmDuracionMembresia.Location = new System.Drawing.Point(314, 241);
+            this.cbmDuracionMembresia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbmDuracionMembresia.Name = "cbmDuracionMembresia";
-            this.cbmDuracionMembresia.Size = new System.Drawing.Size(180, 38);
+            this.cbmDuracionMembresia.Size = new System.Drawing.Size(160, 33);
             this.cbmDuracionMembresia.TabIndex = 69;
             // 
             // TxtDuracionMembresia
             // 
             this.TxtDuracionMembresia.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.TxtDuracionMembresia.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDuracionMembresia.Location = new System.Drawing.Point(289, 302);
-            this.TxtDuracionMembresia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtDuracionMembresia.Location = new System.Drawing.Point(257, 242);
+            this.TxtDuracionMembresia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtDuracionMembresia.MaxLength = 2;
             this.TxtDuracionMembresia.Name = "TxtDuracionMembresia";
-            this.TxtDuracionMembresia.Size = new System.Drawing.Size(54, 36);
+            this.TxtDuracionMembresia.Size = new System.Drawing.Size(48, 31);
             this.TxtDuracionMembresia.TabIndex = 68;
             // 
             // TxtPrecioMembresia
             // 
             this.TxtPrecioMembresia.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.TxtPrecioMembresia.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPrecioMembresia.Location = new System.Drawing.Point(330, 239);
-            this.TxtPrecioMembresia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtPrecioMembresia.Location = new System.Drawing.Point(293, 191);
+            this.TxtPrecioMembresia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtPrecioMembresia.MaxLength = 2;
             this.TxtPrecioMembresia.Name = "TxtPrecioMembresia";
-            this.TxtPrecioMembresia.Size = new System.Drawing.Size(54, 36);
+            this.TxtPrecioMembresia.Size = new System.Drawing.Size(48, 31);
             this.TxtPrecioMembresia.TabIndex = 67;
             // 
             // TxtTipoMembresia
             // 
             this.TxtTipoMembresia.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.TxtTipoMembresia.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTipoMembresia.Location = new System.Drawing.Point(295, 135);
-            this.TxtTipoMembresia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtTipoMembresia.Location = new System.Drawing.Point(262, 108);
+            this.TxtTipoMembresia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtTipoMembresia.Name = "TxtTipoMembresia";
-            this.TxtTipoMembresia.Size = new System.Drawing.Size(238, 36);
+            this.TxtTipoMembresia.Size = new System.Drawing.Size(212, 31);
             this.TxtTipoMembresia.TabIndex = 65;
             // 
             // TxtNombreMembresia
             // 
             this.TxtNombreMembresia.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.TxtNombreMembresia.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombreMembresia.Location = new System.Drawing.Point(295, 82);
-            this.TxtNombreMembresia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtNombreMembresia.Location = new System.Drawing.Point(262, 66);
+            this.TxtNombreMembresia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtNombreMembresia.Name = "TxtNombreMembresia";
-            this.TxtNombreMembresia.Size = new System.Drawing.Size(238, 36);
+            this.TxtNombreMembresia.Size = new System.Drawing.Size(212, 31);
             this.TxtNombreMembresia.TabIndex = 64;
             // 
             // LabelDuracionPlan
@@ -217,10 +217,10 @@
             this.LabelDuracionPlan.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.LabelDuracionPlan.AutoSize = true;
             this.LabelDuracionPlan.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelDuracionPlan.Location = new System.Drawing.Point(144, 302);
+            this.LabelDuracionPlan.Location = new System.Drawing.Point(128, 242);
             this.LabelDuracionPlan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelDuracionPlan.Name = "LabelDuracionPlan";
-            this.LabelDuracionPlan.Size = new System.Drawing.Size(141, 36);
+            this.LabelDuracionPlan.Size = new System.Drawing.Size(121, 31);
             this.LabelDuracionPlan.TabIndex = 63;
             this.LabelDuracionPlan.Text = "Duracion:";
             // 
@@ -229,10 +229,10 @@
             this.LabelPrecioPlan.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.LabelPrecioPlan.AutoSize = true;
             this.LabelPrecioPlan.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelPrecioPlan.Location = new System.Drawing.Point(71, 241);
+            this.LabelPrecioPlan.Location = new System.Drawing.Point(63, 193);
             this.LabelPrecioPlan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelPrecioPlan.Name = "LabelPrecioPlan";
-            this.LabelPrecioPlan.Size = new System.Drawing.Size(217, 36);
+            this.LabelPrecioPlan.Size = new System.Drawing.Size(186, 31);
             this.LabelPrecioPlan.TabIndex = 62;
             this.LabelPrecioPlan.Text = "Precio del Plan:";
             // 
@@ -241,10 +241,10 @@
             this.LabelTipoPlan.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.LabelTipoPlan.AutoSize = true;
             this.LabelTipoPlan.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTipoPlan.Location = new System.Drawing.Point(96, 135);
+            this.LabelTipoPlan.Location = new System.Drawing.Point(85, 108);
             this.LabelTipoPlan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelTipoPlan.Name = "LabelTipoPlan";
-            this.LabelTipoPlan.Size = new System.Drawing.Size(192, 36);
+            this.LabelTipoPlan.Size = new System.Drawing.Size(164, 31);
             this.LabelTipoPlan.TabIndex = 61;
             this.LabelTipoPlan.Text = "Tipo De Plan:";
             // 
@@ -253,20 +253,20 @@
             this.LabelNombrePlan.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.LabelNombrePlan.AutoSize = true;
             this.LabelNombrePlan.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelNombrePlan.Location = new System.Drawing.Point(53, 82);
+            this.LabelNombrePlan.Location = new System.Drawing.Point(47, 66);
             this.LabelNombrePlan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelNombrePlan.Name = "LabelNombrePlan";
-            this.LabelNombrePlan.Size = new System.Drawing.Size(236, 36);
+            this.LabelNombrePlan.Size = new System.Drawing.Size(202, 31);
             this.LabelNombrePlan.TabIndex = 60;
             this.LabelNombrePlan.Text = "Nombre De Plan:";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(638, 82);
+            this.pictureBox1.Location = new System.Drawing.Point(567, 66);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(117, 116);
+            this.pictureBox1.Size = new System.Drawing.Size(104, 93);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 73;
             this.pictureBox1.TabStop = false;
@@ -274,20 +274,19 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(638, 219);
+            this.pictureBox2.Location = new System.Drawing.Point(567, 175);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(117, 109);
+            this.pictureBox2.Size = new System.Drawing.Size(104, 87);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 74;
             this.pictureBox2.TabStop = false;
             // 
             // FrmMembresia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(850, 662);
+            this.ClientSize = new System.Drawing.Size(756, 530);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtDescripcion);

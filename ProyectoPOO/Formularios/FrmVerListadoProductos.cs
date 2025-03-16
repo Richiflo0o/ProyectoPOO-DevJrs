@@ -16,5 +16,10 @@ namespace ProyectoPOO.Formularios
         {
             InitializeComponent();
         }
+
+        private void btnModificarSocio_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
