@@ -55,9 +55,8 @@ namespace ProyectoPOO.Formularios
             this.BarraTituloFormularioAgregarProducto.Controls.Add(this.btnCerrar);
             this.BarraTituloFormularioAgregarProducto.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTituloFormularioAgregarProducto.Location = new System.Drawing.Point(0, 0);
-            this.BarraTituloFormularioAgregarProducto.Margin = new System.Windows.Forms.Padding(2);
             this.BarraTituloFormularioAgregarProducto.Name = "BarraTituloFormularioAgregarProducto";
-            this.BarraTituloFormularioAgregarProducto.Size = new System.Drawing.Size(800, 41);
+            this.BarraTituloFormularioAgregarProducto.Size = new System.Drawing.Size(1200, 63);
             this.BarraTituloFormularioAgregarProducto.TabIndex = 29;
             // 
             // lblAsistencia
@@ -65,10 +64,9 @@ namespace ProyectoPOO.Formularios
             this.lblAsistencia.AutoSize = true;
             this.lblAsistencia.Font = new System.Drawing.Font("Segoe UI Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAsistencia.ForeColor = System.Drawing.Color.White;
-            this.lblAsistencia.Location = new System.Drawing.Point(46, -1);
-            this.lblAsistencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAsistencia.Location = new System.Drawing.Point(69, -2);
             this.lblAsistencia.Name = "lblAsistencia";
-            this.lblAsistencia.Size = new System.Drawing.Size(191, 40);
+            this.lblAsistencia.Size = new System.Drawing.Size(287, 60);
             this.lblAsistencia.TabIndex = 7;
             this.lblAsistencia.Text = "ASISTENCIA";
             // 
@@ -77,10 +75,9 @@ namespace ProyectoPOO.Formularios
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(770, 9);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Location = new System.Drawing.Point(1155, 14);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(22, 23);
+            this.btnCerrar.Size = new System.Drawing.Size(33, 35);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 1;
             this.btnCerrar.TabStop = false;
@@ -88,15 +85,17 @@ namespace ProyectoPOO.Formularios
             // 
             // tsAsistencia
             // 
+            this.tsAsistencia.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.tsAsistencia.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.tscmbFiltro,
             this.toolStripSeparator1,
             this.toolStripLabel2,
             this.txtBuscador});
-            this.tsAsistencia.Location = new System.Drawing.Point(0, 41);
+            this.tsAsistencia.Location = new System.Drawing.Point(0, 63);
             this.tsAsistencia.Name = "tsAsistencia";
-            this.tsAsistencia.Size = new System.Drawing.Size(800, 25);
+            this.tsAsistencia.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.tsAsistencia.Size = new System.Drawing.Size(1200, 38);
             this.tsAsistencia.TabIndex = 30;
             this.tsAsistencia.Text = "toolStrip1";
             // 
@@ -104,7 +103,7 @@ namespace ProyectoPOO.Formularios
             // 
             this.toolStripLabel1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(71, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(115, 33);
             this.toolStripLabel1.Text = "Elegir Filtro:";
             // 
             // tscmbFiltro
@@ -115,26 +114,26 @@ namespace ProyectoPOO.Formularios
             "Correo",
             "Telefono"});
             this.tscmbFiltro.Name = "tscmbFiltro";
-            this.tscmbFiltro.Size = new System.Drawing.Size(121, 25);
+            this.tscmbFiltro.Size = new System.Drawing.Size(180, 38);
             this.tscmbFiltro.Text = "Nombre";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
             // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(58, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(85, 33);
             this.toolStripLabel2.Text = "Buscador";
             // 
             // txtBuscador
             // 
             this.txtBuscador.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBuscador.Name = "txtBuscador";
-            this.txtBuscador.Size = new System.Drawing.Size(100, 25);
+            this.txtBuscador.Size = new System.Drawing.Size(148, 38);
             this.txtBuscador.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBuscador_KeyUp);
             // 
             // dgvAsistencia
@@ -152,6 +151,7 @@ namespace ProyectoPOO.Formularios
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvAsistencia.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvAsistencia.ColumnHeadersHeight = 34;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -163,21 +163,24 @@ namespace ProyectoPOO.Formularios
             this.dgvAsistencia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvAsistencia.EnableHeadersVisualStyles = false;
             this.dgvAsistencia.GridColor = System.Drawing.Color.Teal;
-            this.dgvAsistencia.Location = new System.Drawing.Point(0, 66);
+            this.dgvAsistencia.Location = new System.Drawing.Point(0, 101);
+            this.dgvAsistencia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvAsistencia.Name = "dgvAsistencia";
             this.dgvAsistencia.ReadOnly = true;
-            this.dgvAsistencia.Size = new System.Drawing.Size(800, 326);
+            this.dgvAsistencia.RowHeadersWidth = 62;
+            this.dgvAsistencia.Size = new System.Drawing.Size(1200, 502);
             this.dgvAsistencia.TabIndex = 31;
             // 
             // FrmAsistencia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 392);
+            this.ClientSize = new System.Drawing.Size(1200, 603);
             this.Controls.Add(this.dgvAsistencia);
             this.Controls.Add(this.tsAsistencia);
             this.Controls.Add(this.BarraTituloFormularioAgregarProducto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmAsistencia";
             this.Text = "FrmAsistencia";
             this.Load += new System.EventHandler(this.FrmAsistencia_Load);
