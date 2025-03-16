@@ -152,7 +152,7 @@
             // 
             this.PictureBoxBuscarSocio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxBuscarSocio.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxBuscarSocio.Image")));
-            this.PictureBoxBuscarSocio.Location = new System.Drawing.Point(738, 66);
+            this.PictureBoxBuscarSocio.Location = new System.Drawing.Point(747, 66);
             this.PictureBoxBuscarSocio.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.PictureBoxBuscarSocio.Name = "PictureBoxBuscarSocio";
             this.PictureBoxBuscarSocio.Size = new System.Drawing.Size(45, 49);
