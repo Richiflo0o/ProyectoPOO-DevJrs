@@ -68,6 +68,5 @@ namespace ProyectoPOO.Formularios
 
             gProductos.IngresarUsuario("Productos", "id_producto, producto, categoria, descripcion, precio_unitario,cantidad,estado = DEFAULT", cadena);
         }
-
     }
 }
