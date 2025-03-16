@@ -25,10 +25,10 @@ namespace AplicacionGym
 
         public csConectaSQL()
         {
-            Server = @"DESKTOP-ULDUU6I\SQLEXPRESS01";
+            Server = @"DESKTOP-22RT09N\SQLEXPRESS";
             Database = "FitMaxDB2";
             Usuario = "sa";
-            Clave = "1234";
+            Clave = "123456";
         }
 
         public bool abrirConexion()
@@ -60,37 +60,6 @@ namespace AplicacionGym
                 return false;
             }
         }
-        public bool InsertarSocio(int idPersona, int idMembresia, decimal peso, decimal altura, string objetivo, DateTime fechaNacimiento)
-        {
-            try
-            {
-                if (abrirConexion())
-                {
-                    string query = "INSERT INTO Socios (IDPersona, IDMembresia, Peso, Altura, Objetivo, FechaNacimiento) " +
-                                   "VALUES (@IDPersona, @IDMembresia, @Peso, @Altura, @Objetivo, @FechaNacimiento)";
-
-                    oCom = new SqlCommand(query, oCon);
-                    oCom.Parameters.AddWithValue("@IDPersona", idPersona);
-                    oCom.Parameters.AddWithValue("@IDMembresia", idMembresia);
-                    oCom.Parameters.AddWithValue("@Peso", peso);
-                    oCom.Parameters.AddWithValue("@Altura", altura);
-                    oCom.Parameters.AddWithValue("@Objetivo", objetivo);
-                    oCom.Parameters.AddWithValue("@FechaNacimiento", fechaNacimiento);
-
-                    int filasAfectadas = oCom.ExecuteNonQuery();
-                    cerrarConexion();
-
-                    return filasAfectadas > 0;
-                }
-                return false;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al insertar socio: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
-        }
-
 
     }
 

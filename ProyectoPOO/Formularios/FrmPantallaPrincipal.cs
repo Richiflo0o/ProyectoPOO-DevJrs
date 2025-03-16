@@ -20,11 +20,42 @@ namespace ProyectoPOO.Formularios
             this.tipoUsuario = tipoUsuario; 
             ConfigurarInterfaz(); 
         }
+
+        public FrmPantallaPrincipal()
+        {
+            InitializeComponent();
+        }
+
+        private void FrmPantallaPrincipal_Load(object sender, EventArgs e)
+        {
+            FrmControlAcceso controlAcceso = new FrmControlAcceso();
+            AbrirFormulariosHijas(controlAcceso);
+        }
+        //
+        //
+        //
         private void PtbCerrarFormularioPrincipal_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        private void ptbMaximizar_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+        private void ptbMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+        //
+        //
+        //
         private void tsmiListaDeUsuarios_Click(object sender, EventArgs e)
         {
             FrmAgregarPerfil crearperfil = new FrmAgregarPerfil();
@@ -51,12 +82,41 @@ namespace ProyectoPOO.Formularios
 
             }
         }
-
-        private void agregarUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        //
+        //Paner Interfaces
+        //
+        private void AbrirFormulariosHijas(object formulariosHijos)
         {
-            FrmAgregarUsuario agregarUsuario = new FrmAgregarUsuario();
-                agregarUsuario.Show();
-            this.Hide();
+            if (formulariosHijos == null)
+                return;
+
+            if (this.pciContenedor.Controls.Count > 0)
+            {
+                this.pciContenedor.Controls.RemoveAt(0);
+            }
+
+            Form Formularios = formulariosHijos as Form;
+            if (Formularios != null)
+            {
+                Formularios.TopLevel = false;
+                Formularios.Dock = DockStyle.Fill;
+                Formularios.FormBorderStyle = FormBorderStyle.None;
+                this.pciContenedor.Controls.Add(Formularios);
+                this.pciContenedor.Tag = Formularios;
+                Formularios.Show();
+            }
         }
+
+        private void pciContenedor_Paint(object sender, PaintEventArgs e)
+        {
+            if (this.pciContenedor.Controls.Count == 0)
+            {
+                FrmControlAcceso ControlAccesoVer = new FrmControlAcceso();
+                pciContenedor.Controls.Clear();
+                AbrirFormulariosHijas(ControlAccesoVer);
+            }
+        }
+
+
     }
 }
