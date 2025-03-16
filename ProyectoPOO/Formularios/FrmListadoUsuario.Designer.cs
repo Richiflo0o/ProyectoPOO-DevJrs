@@ -61,7 +61,7 @@
             this.bartListadoPerfil.Location = new System.Drawing.Point(0, 0);
             this.bartListadoPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bartListadoPerfil.Name = "bartListadoPerfil";
-            this.bartListadoPerfil.Size = new System.Drawing.Size(1072, 62);
+            this.bartListadoPerfil.Size = new System.Drawing.Size(953, 50);
             this.bartListadoPerfil.TabIndex = 8;
             // 
             // lblListadoPerfilUusuario
@@ -69,9 +69,9 @@
             this.lblListadoPerfilUusuario.AutoSize = true;
             this.lblListadoPerfilUusuario.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblListadoPerfilUusuario.ForeColor = System.Drawing.Color.White;
-            this.lblListadoPerfilUusuario.Location = new System.Drawing.Point(398, 12);
+            this.lblListadoPerfilUusuario.Location = new System.Drawing.Point(350, 4);
             this.lblListadoPerfilUusuario.Name = "lblListadoPerfilUusuario";
-            this.lblListadoPerfilUusuario.Size = new System.Drawing.Size(451, 48);
+            this.lblListadoPerfilUusuario.Size = new System.Drawing.Size(371, 41);
             this.lblListadoPerfilUusuario.TabIndex = 2;
             this.lblListadoPerfilUusuario.Text = "LISTADO PERFIL DE USUARIO";
             // 
@@ -79,10 +79,10 @@
             // 
             this.imgLogoListadoPerfil.BackColor = System.Drawing.Color.SeaGreen;
             this.imgLogoListadoPerfil.Image = ((System.Drawing.Image)(resources.GetObject("imgLogoListadoPerfil.Image")));
-            this.imgLogoListadoPerfil.Location = new System.Drawing.Point(-27, -5);
+            this.imgLogoListadoPerfil.Location = new System.Drawing.Point(-24, -4);
             this.imgLogoListadoPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgLogoListadoPerfil.Name = "imgLogoListadoPerfil";
-            this.imgLogoListadoPerfil.Size = new System.Drawing.Size(266, 65);
+            this.imgLogoListadoPerfil.Size = new System.Drawing.Size(236, 52);
             this.imgLogoListadoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgLogoListadoPerfil.TabIndex = 0;
             this.imgLogoListadoPerfil.TabStop = false;
@@ -92,10 +92,10 @@
             this.btnCerrarListadoPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrarListadoPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrarListadoPerfil.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarListadoPerfil.Image")));
-            this.btnCerrarListadoPerfil.Location = new System.Drawing.Point(1010, 9);
+            this.btnCerrarListadoPerfil.Location = new System.Drawing.Point(898, 7);
             this.btnCerrarListadoPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCerrarListadoPerfil.Name = "btnCerrarListadoPerfil";
-            this.btnCerrarListadoPerfil.Size = new System.Drawing.Size(34, 35);
+            this.btnCerrarListadoPerfil.Size = new System.Drawing.Size(30, 28);
             this.btnCerrarListadoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrarListadoPerfil.TabIndex = 1;
             this.btnCerrarListadoPerfil.TabStop = false;
@@ -113,30 +113,30 @@
             this.btnModificarSocio,
             this.BtnEliminarSocio,
             this.toolStripSeparator5});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 62);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 50);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(1072, 42);
+            this.toolStrip1.Size = new System.Drawing.Size(953, 34);
             this.toolStrip1.TabIndex = 35;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 42);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 34);
             // 
             // lblFiltrarSocio
             // 
             this.lblFiltrarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFiltrarSocio.Name = "lblFiltrarSocio";
-            this.lblFiltrarSocio.Size = new System.Drawing.Size(93, 37);
+            this.lblFiltrarSocio.Size = new System.Drawing.Size(77, 31);
             this.lblFiltrarSocio.Text = "Filtrar:";
             // 
             // txtFiltroUsuario
             // 
             this.txtFiltroUsuario.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFiltroUsuario.Name = "txtFiltroUsuario";
-            this.txtFiltroUsuario.Size = new System.Drawing.Size(250, 42);
+            this.txtFiltroUsuario.Size = new System.Drawing.Size(223, 34);
             // 
             // tsbFiltroSocio
             // 
@@ -145,7 +145,7 @@
             this.tsbFiltroSocio.Image = ((System.Drawing.Image)(resources.GetObject("tsbFiltroSocio.Image")));
             this.tsbFiltroSocio.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbFiltroSocio.Name = "tsbFiltroSocio";
-            this.tsbFiltroSocio.Size = new System.Drawing.Size(34, 37);
+            this.tsbFiltroSocio.Size = new System.Drawing.Size(29, 31);
             this.tsbFiltroSocio.Text = "toolStripButton1";
             // 
             // BtnAgregarSocio
@@ -154,14 +154,14 @@
             this.BtnAgregarSocio.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregarSocio.Image")));
             this.BtnAgregarSocio.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnAgregarSocio.Name = "BtnAgregarSocio";
-            this.BtnAgregarSocio.Size = new System.Drawing.Size(126, 37);
+            this.BtnAgregarSocio.Size = new System.Drawing.Size(113, 31);
             this.BtnAgregarSocio.Text = "Agregar";
             this.BtnAgregarSocio.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 42);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 34);
             // 
             // btnModificarSocio
             // 
@@ -169,7 +169,7 @@
             this.btnModificarSocio.Image = ((System.Drawing.Image)(resources.GetObject("btnModificarSocio.Image")));
             this.btnModificarSocio.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnModificarSocio.Name = "btnModificarSocio";
-            this.btnModificarSocio.Size = new System.Drawing.Size(150, 37);
+            this.btnModificarSocio.Size = new System.Drawing.Size(131, 31);
             this.btnModificarSocio.Text = "Modificar";
             this.btnModificarSocio.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             // 
@@ -179,37 +179,39 @@
             this.BtnEliminarSocio.Image = ((System.Drawing.Image)(resources.GetObject("BtnEliminarSocio.Image")));
             this.BtnEliminarSocio.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnEliminarSocio.Name = "BtnEliminarSocio";
-            this.BtnEliminarSocio.Size = new System.Drawing.Size(135, 37);
+            this.BtnEliminarSocio.Size = new System.Drawing.Size(118, 31);
             this.BtnEliminarSocio.Text = "Eliminar";
             this.BtnEliminarSocio.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 42);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 34);
             // 
             // DGVListadoUsuarios
             // 
             this.DGVListadoUsuarios.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DGVListadoUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVListadoUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DGVListadoUsuarios.Location = new System.Drawing.Point(0, 104);
+            this.DGVListadoUsuarios.Location = new System.Drawing.Point(0, 84);
+            this.DGVListadoUsuarios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DGVListadoUsuarios.Name = "DGVListadoUsuarios";
             this.DGVListadoUsuarios.RowHeadersWidth = 62;
             this.DGVListadoUsuarios.RowTemplate.Height = 28;
-            this.DGVListadoUsuarios.Size = new System.Drawing.Size(1072, 637);
+            this.DGVListadoUsuarios.Size = new System.Drawing.Size(953, 509);
             this.DGVListadoUsuarios.TabIndex = 36;
             this.DGVListadoUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVListadoUsuarios_CellContentClick);
             // 
             // FrmListadoUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1072, 741);
+            this.ClientSize = new System.Drawing.Size(953, 593);
             this.Controls.Add(this.DGVListadoUsuarios);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.bartListadoPerfil);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmListadoUsuario";
             this.Text = "FrmListadoUsuario";
             this.bartListadoPerfil.ResumeLayout(false);
