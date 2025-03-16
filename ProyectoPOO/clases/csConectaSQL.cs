@@ -27,10 +27,10 @@ namespace AplicacionGym
         string Cadena;
         public csConectaSQL()
         {
-            Server = @"DESKTOP-22RT09N\SQLEXPRESS";
-            Database = "FitMaxDB2";
-            Usuario = "sa";
-            Clave = "123456";
+            Server = @"DESKTOP-4VRI4ES";
+            Database = "SDSD";
+            Usuario = "Admin";
+            Clave = "12345";
         }
 
         public csConectaSQL(string Server, string Database, string Usuario, string Clave)
