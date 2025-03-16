@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AplicacionGym;
 
 namespace ProyectoPOO.Formularios
 {
@@ -129,6 +130,16 @@ namespace ProyectoPOO.Formularios
             pciContenedor.Controls.Clear();
             AbrirFormulariosHijas(agregarusario);
 
+        }
+
+        private void tsmiNuevoInstructor_Click(object sender, EventArgs e)
+        {
+            FrmNuevoInstructor VerFormularioNuevoInstructor = new FrmNuevoInstructor();
+            VerFormularioNuevoInstructor.TopLevel = false;
+            VerFormularioNuevoInstructor.FormBorderStyle = FormBorderStyle.None;
+            VerFormularioNuevoInstructor.Dock = DockStyle.Fill;
+            pciContenedor.Controls.Clear();
+            AbrirFormulariosHijas(VerFormularioNuevoInstructor);
         }
     }
 }

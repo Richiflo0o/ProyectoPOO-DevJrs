@@ -252,14 +252,15 @@
             this.tsmiNuevoInstructor});
             this.tsmiInstructores.Image = ((System.Drawing.Image)(resources.GetObject("tsmiInstructores.Image")));
             this.tsmiInstructores.Name = "tsmiInstructores";
-            this.tsmiInstructores.Size = new System.Drawing.Size(145, 44);
+            this.tsmiInstructores.Size = new System.Drawing.Size(145, 42);
             this.tsmiInstructores.Text = "Instructores";
             // 
             // tsmiNuevoInstructor
             // 
             this.tsmiNuevoInstructor.Name = "tsmiNuevoInstructor";
-            this.tsmiNuevoInstructor.Size = new System.Drawing.Size(247, 34);
+            this.tsmiNuevoInstructor.Size = new System.Drawing.Size(270, 34);
             this.tsmiNuevoInstructor.Text = "Nuevo Instructor";
+            this.tsmiNuevoInstructor.Click += new System.EventHandler(this.tsmiNuevoInstructor_Click);
             // 
             // tsmiCaja
             // 
