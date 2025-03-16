@@ -356,6 +356,7 @@
             this.PictureSeleccionarFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureSeleccionarFoto.TabIndex = 61;
             this.PictureSeleccionarFoto.TabStop = false;
+            this.PictureSeleccionarFoto.Click += new System.EventHandler(this.PictureSeleccionarFoto_Click);
             // 
             // PictureBoxFotoSocio
             // 
