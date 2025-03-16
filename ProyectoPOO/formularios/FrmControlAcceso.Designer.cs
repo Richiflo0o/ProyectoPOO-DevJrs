@@ -36,7 +36,6 @@
             this.PictureBoxAgregarVentaProductos = new System.Windows.Forms.PictureBox();
             this.PictureBoxDeudasClientes = new System.Windows.Forms.PictureBox();
             this.PictureBoxAgregarSocio = new System.Windows.Forms.PictureBox();
-            this.PictureBoxNotificaicones = new System.Windows.Forms.PictureBox();
             this.PanelLetrasControlAcceso = new System.Windows.Forms.Panel();
             this.PictureBoxBuscarSocio = new System.Windows.Forms.PictureBox();
             this.txtBusquedaOpciones = new System.Windows.Forms.TextBox();
@@ -48,7 +47,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxAgregarVentaProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxDeudasClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxAgregarSocio)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxNotificaicones)).BeginInit();
             this.PanelLetrasControlAcceso.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxBuscarSocio)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +54,7 @@
             // dgvControlAcceso
             // 
             this.dgvControlAcceso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvControlAcceso.Location = new System.Drawing.Point(249, 172);
+            this.dgvControlAcceso.Location = new System.Drawing.Point(320, 204);
             this.dgvControlAcceso.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvControlAcceso.Name = "dgvControlAcceso";
             this.dgvControlAcceso.RowHeadersWidth = 62;
@@ -67,7 +65,7 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(2, 162);
+            this.pictureBox1.Location = new System.Drawing.Point(40, 178);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(230, 235);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -91,9 +89,9 @@
             this.LabelFechaHoy.BackColor = System.Drawing.Color.Transparent;
             this.LabelFechaHoy.Font = new System.Drawing.Font("Georgia", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelFechaHoy.ForeColor = System.Drawing.Color.Brown;
-            this.LabelFechaHoy.Location = new System.Drawing.Point(12, 574);
+            this.LabelFechaHoy.Location = new System.Drawing.Point(29, 562);
             this.LabelFechaHoy.Name = "LabelFechaHoy";
-            this.LabelFechaHoy.Size = new System.Drawing.Size(250, 62);
+            this.LabelFechaHoy.Size = new System.Drawing.Size(321, 62);
             this.LabelFechaHoy.TabIndex = 14;
             this.LabelFechaHoy.Text = "label2";
             // 
@@ -136,19 +134,6 @@
             this.PictureBoxAgregarSocio.TabIndex = 11;
             this.PictureBoxAgregarSocio.TabStop = false;
             // 
-            // PictureBoxNotificaicones
-            // 
-            this.PictureBoxNotificaicones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PictureBoxNotificaicones.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureBoxNotificaicones.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxNotificaicones.Image")));
-            this.PictureBoxNotificaicones.Location = new System.Drawing.Point(1192, 40);
-            this.PictureBoxNotificaicones.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.PictureBoxNotificaicones.Name = "PictureBoxNotificaicones";
-            this.PictureBoxNotificaicones.Size = new System.Drawing.Size(68, 65);
-            this.PictureBoxNotificaicones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBoxNotificaicones.TabIndex = 10;
-            this.PictureBoxNotificaicones.TabStop = false;
-            // 
             // PanelLetrasControlAcceso
             // 
             this.PanelLetrasControlAcceso.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -157,7 +142,7 @@
             this.PanelLetrasControlAcceso.Controls.Add(this.LabelOpcionesDeBusquedaNombre);
             this.PanelLetrasControlAcceso.Controls.Add(this.LabelControlAcceso);
             this.PanelLetrasControlAcceso.Controls.Add(this.label1);
-            this.PanelLetrasControlAcceso.Location = new System.Drawing.Point(238, 14);
+            this.PanelLetrasControlAcceso.Location = new System.Drawing.Point(320, 24);
             this.PanelLetrasControlAcceso.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.PanelLetrasControlAcceso.Name = "PanelLetrasControlAcceso";
             this.PanelLetrasControlAcceso.Size = new System.Drawing.Size(806, 135);
@@ -232,7 +217,6 @@
             this.Controls.Add(this.PictureBoxAgregarVentaProductos);
             this.Controls.Add(this.PictureBoxDeudasClientes);
             this.Controls.Add(this.PictureBoxAgregarSocio);
-            this.Controls.Add(this.PictureBoxNotificaicones);
             this.Controls.Add(this.PanelLetrasControlAcceso);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmControlAcceso";
@@ -242,7 +226,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxAgregarVentaProductos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxDeudasClientes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxAgregarSocio)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxNotificaicones)).EndInit();
             this.PanelLetrasControlAcceso.ResumeLayout(false);
             this.PanelLetrasControlAcceso.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxBuscarSocio)).EndInit();
@@ -260,7 +243,6 @@
         private System.Windows.Forms.PictureBox PictureBoxAgregarVentaProductos;
         private System.Windows.Forms.PictureBox PictureBoxDeudasClientes;
         private System.Windows.Forms.PictureBox PictureBoxAgregarSocio;
-        private System.Windows.Forms.PictureBox PictureBoxNotificaicones;
         private System.Windows.Forms.Panel PanelLetrasControlAcceso;
         private System.Windows.Forms.PictureBox PictureBoxBuscarSocio;
         private System.Windows.Forms.TextBox txtBusquedaOpciones;

@@ -79,12 +79,6 @@
     <Compile Include="formularios\FrmControlAcceso.Designer.cs">
       <DependentUpon>FrmControlAcceso.cs</DependentUpon>
     </Compile>
-    <Compile Include="formularios\FrmInstructores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formularios\FrmInstructores.Designer.cs">
-      <DependentUpon>FrmInstructores.cs</DependentUpon>
-    </Compile>
     <Compile Include="formularios\FrmListadoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +96,12 @@
     </Compile>
     <Compile Include="formularios\FrmMembresia.Designer.cs">
       <DependentUpon>FrmMembresia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FrmNuevoInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FrmNuevoInstructor.Designer.cs">
+      <DependentUpon>FrmNuevoInstructor.cs</DependentUpon>
     </Compile>
     <Compile Include="formularios\FrmPantallaPrincipal.cs">
       <SubType>Form</SubType>
@@ -151,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formularios\FrmMembresia.resx">
       <DependentUpon>FrmMembresia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FrmNuevoInstructor.resx">
+      <DependentUpon>FrmNuevoInstructor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formularios\FrmPantallaPrincipal.resx">
       <DependentUpon>FrmPantallaPrincipal.cs</DependentUpon>
