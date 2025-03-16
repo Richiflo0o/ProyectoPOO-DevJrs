@@ -307,7 +307,7 @@
             // 
             this.PictureBoxLogoAgregarUsuario.BackColor = System.Drawing.Color.SeaGreen;
             this.PictureBoxLogoAgregarUsuario.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxLogoAgregarUsuario.Image")));
-            this.PictureBoxLogoAgregarUsuario.Location = new System.Drawing.Point(-24, -4);
+            this.PictureBoxLogoAgregarUsuario.Location = new System.Drawing.Point(0, 0);
             this.PictureBoxLogoAgregarUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PictureBoxLogoAgregarUsuario.Name = "PictureBoxLogoAgregarUsuario";
             this.PictureBoxLogoAgregarUsuario.Size = new System.Drawing.Size(236, 52);
