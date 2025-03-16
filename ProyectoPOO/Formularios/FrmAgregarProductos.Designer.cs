@@ -58,7 +58,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(571, 86);
+            this.pictureBox1.Location = new System.Drawing.Point(571, 70);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(148, 128);
@@ -68,42 +68,43 @@
             // 
             // cmbCategoria
             // 
+            this.cmbCategoria.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCategoria.FormattingEnabled = true;
-            this.cmbCategoria.Location = new System.Drawing.Point(306, 151);
+            this.cmbCategoria.Location = new System.Drawing.Point(298, 143);
             this.cmbCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(195, 24);
+            this.cmbCategoria.Size = new System.Drawing.Size(195, 36);
             this.cmbCategoria.TabIndex = 21;
             // 
             // TxtDescripcionProductos
             // 
             this.TxtDescripcionProductos.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDescripcionProductos.Location = new System.Drawing.Point(6, 254);
-            this.TxtDescripcionProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtDescripcionProductos.Location = new System.Drawing.Point(298, 189);
+            this.TxtDescripcionProductos.Margin = new System.Windows.Forms.Padding(4);
             this.TxtDescripcionProductos.Multiline = true;
             this.TxtDescripcionProductos.Name = "TxtDescripcionProductos";
-            this.TxtDescripcionProductos.Size = new System.Drawing.Size(250, 22);
+            this.TxtDescripcionProductos.Size = new System.Drawing.Size(250, 33);
             this.TxtDescripcionProductos.TabIndex = 23;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 322);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(166, 294);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 24);
+            this.label1.Size = new System.Drawing.Size(104, 28);
             this.label1.TabIndex = 29;
-            this.label1.Text = "Cantidad";
+            this.label1.Text = "Cantidad:";
             // 
             // ButtonGuardarAgregarProducto
             // 
             this.ButtonGuardarAgregarProducto.BackColor = System.Drawing.Color.SeaGreen;
-            this.ButtonGuardarAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonGuardarAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ButtonGuardarAgregarProducto.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonGuardarAgregarProducto.ForeColor = System.Drawing.Color.White;
-            this.ButtonGuardarAgregarProducto.Location = new System.Drawing.Point(457, 277);
-            this.ButtonGuardarAgregarProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonGuardarAgregarProducto.Location = new System.Drawing.Point(538, 261);
+            this.ButtonGuardarAgregarProducto.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonGuardarAgregarProducto.Name = "ButtonGuardarAgregarProducto";
             this.ButtonGuardarAgregarProducto.Size = new System.Drawing.Size(181, 69);
             this.ButtonGuardarAgregarProducto.TabIndex = 27;
@@ -175,106 +176,107 @@
             // TxtNombreProducto
             // 
             this.TxtNombreProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombreProducto.Location = new System.Drawing.Point(6, 151);
-            this.TxtNombreProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtNombreProducto.Location = new System.Drawing.Point(298, 101);
+            this.TxtNombreProducto.Margin = new System.Windows.Forms.Padding(4);
             this.TxtNombreProducto.Multiline = true;
             this.TxtNombreProducto.Name = "TxtNombreProducto";
-            this.TxtNombreProducto.Size = new System.Drawing.Size(205, 22);
+            this.TxtNombreProducto.Size = new System.Drawing.Size(205, 33);
             this.TxtNombreProducto.TabIndex = 19;
             // 
             // txtcantidadProducto
             // 
             this.txtcantidadProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcantidadProducto.Location = new System.Drawing.Point(126, 325);
-            this.txtcantidadProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtcantidadProducto.Location = new System.Drawing.Point(298, 294);
+            this.txtcantidadProducto.Margin = new System.Windows.Forms.Padding(4);
             this.txtcantidadProducto.Multiline = true;
             this.txtcantidadProducto.Name = "txtcantidadProducto";
-            this.txtcantidadProducto.Size = new System.Drawing.Size(56, 22);
+            this.txtcantidadProducto.Size = new System.Drawing.Size(56, 33);
             this.txtcantidadProducto.TabIndex = 26;
             // 
             // TxtprecioProducto
             // 
             this.TxtprecioProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtprecioProducto.Location = new System.Drawing.Point(306, 254);
-            this.TxtprecioProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtprecioProducto.Location = new System.Drawing.Point(298, 239);
+            this.TxtprecioProducto.Margin = new System.Windows.Forms.Padding(4);
             this.TxtprecioProducto.Multiline = true;
             this.TxtprecioProducto.Name = "TxtprecioProducto";
-            this.TxtprecioProducto.Size = new System.Drawing.Size(78, 22);
+            this.TxtprecioProducto.Size = new System.Drawing.Size(78, 33);
             this.TxtprecioProducto.TabIndex = 25;
+            this.TxtprecioProducto.TextChanged += new System.EventHandler(this.TxtprecioProducto_TextChanged);
             // 
             // TxtCodigoProducto
             // 
-            this.TxtCodigoProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCodigoProducto.Location = new System.Drawing.Point(104, 65);
-            this.TxtCodigoProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtCodigoProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCodigoProducto.Location = new System.Drawing.Point(298, 60);
+            this.TxtCodigoProducto.Margin = new System.Windows.Forms.Padding(4);
             this.TxtCodigoProducto.Multiline = true;
             this.TxtCodigoProducto.Name = "TxtCodigoProducto";
-            this.TxtCodigoProducto.Size = new System.Drawing.Size(87, 22);
+            this.TxtCodigoProducto.Size = new System.Drawing.Size(87, 33);
             this.TxtCodigoProducto.TabIndex = 17;
             // 
             // LabelPrecioVentaFormularioAgregarProducto
             // 
             this.LabelPrecioVentaFormularioAgregarProducto.AutoSize = true;
-            this.LabelPrecioVentaFormularioAgregarProducto.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelPrecioVentaFormularioAgregarProducto.Location = new System.Drawing.Point(10, 204);
+            this.LabelPrecioVentaFormularioAgregarProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelPrecioVentaFormularioAgregarProducto.Location = new System.Drawing.Point(7, 189);
             this.LabelPrecioVentaFormularioAgregarProducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelPrecioVentaFormularioAgregarProducto.Name = "LabelPrecioVentaFormularioAgregarProducto";
-            this.LabelPrecioVentaFormularioAgregarProducto.Size = new System.Drawing.Size(238, 24);
+            this.LabelPrecioVentaFormularioAgregarProducto.Size = new System.Drawing.Size(263, 28);
             this.LabelPrecioVentaFormularioAgregarProducto.TabIndex = 24;
-            this.LabelPrecioVentaFormularioAgregarProducto.Text = "Descripcion Del Producto";
+            this.LabelPrecioVentaFormularioAgregarProducto.Text = "Descripcion Del Producto:";
             // 
             // LabelPrecioCompraFormularioAgregarProducto
             // 
             this.LabelPrecioCompraFormularioAgregarProducto.AutoSize = true;
-            this.LabelPrecioCompraFormularioAgregarProducto.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelPrecioCompraFormularioAgregarProducto.Location = new System.Drawing.Point(301, 204);
+            this.LabelPrecioCompraFormularioAgregarProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelPrecioCompraFormularioAgregarProducto.Location = new System.Drawing.Point(60, 239);
             this.LabelPrecioCompraFormularioAgregarProducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelPrecioCompraFormularioAgregarProducto.Name = "LabelPrecioCompraFormularioAgregarProducto";
-            this.LabelPrecioCompraFormularioAgregarProducto.Size = new System.Drawing.Size(188, 24);
+            this.LabelPrecioCompraFormularioAgregarProducto.Size = new System.Drawing.Size(210, 28);
             this.LabelPrecioCompraFormularioAgregarProducto.TabIndex = 22;
-            this.LabelPrecioCompraFormularioAgregarProducto.Text = "Precio Del Producto";
+            this.LabelPrecioCompraFormularioAgregarProducto.Text = "Precio Del Producto:";
             // 
             // LabelDescripcionFormularioAgregarProducto
             // 
             this.LabelDescripcionFormularioAgregarProducto.AutoSize = true;
-            this.LabelDescripcionFormularioAgregarProducto.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelDescripcionFormularioAgregarProducto.Location = new System.Drawing.Point(268, 116);
+            this.LabelDescripcionFormularioAgregarProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelDescripcionFormularioAgregarProducto.Location = new System.Drawing.Point(26, 143);
             this.LabelDescripcionFormularioAgregarProducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelDescripcionFormularioAgregarProducto.Name = "LabelDescripcionFormularioAgregarProducto";
-            this.LabelDescripcionFormularioAgregarProducto.Size = new System.Drawing.Size(217, 24);
+            this.LabelDescripcionFormularioAgregarProducto.Size = new System.Drawing.Size(244, 28);
             this.LabelDescripcionFormularioAgregarProducto.TabIndex = 20;
-            this.LabelDescripcionFormularioAgregarProducto.Text = "Categoria Del Producto";
+            this.LabelDescripcionFormularioAgregarProducto.Text = "Categoria Del Producto:";
             // 
             // LabelNombreFormularioAgregarProducto
             // 
             this.LabelNombreFormularioAgregarProducto.AutoSize = true;
-            this.LabelNombreFormularioAgregarProducto.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelNombreFormularioAgregarProducto.Location = new System.Drawing.Point(12, 116);
+            this.LabelNombreFormularioAgregarProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelNombreFormularioAgregarProducto.Location = new System.Drawing.Point(41, 101);
             this.LabelNombreFormularioAgregarProducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelNombreFormularioAgregarProducto.Name = "LabelNombreFormularioAgregarProducto";
-            this.LabelNombreFormularioAgregarProducto.Size = new System.Drawing.Size(205, 24);
+            this.LabelNombreFormularioAgregarProducto.Size = new System.Drawing.Size(229, 28);
             this.LabelNombreFormularioAgregarProducto.TabIndex = 18;
-            this.LabelNombreFormularioAgregarProducto.Text = "Nombre Del Producto";
+            this.LabelNombreFormularioAgregarProducto.Text = "Nombre Del Producto:";
             // 
             // LabelCodigoFormularioAgregarProducto
             // 
             this.LabelCodigoFormularioAgregarProducto.AutoSize = true;
-            this.LabelCodigoFormularioAgregarProducto.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelCodigoFormularioAgregarProducto.Location = new System.Drawing.Point(12, 63);
+            this.LabelCodigoFormularioAgregarProducto.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelCodigoFormularioAgregarProducto.Location = new System.Drawing.Point(182, 59);
             this.LabelCodigoFormularioAgregarProducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelCodigoFormularioAgregarProducto.Name = "LabelCodigoFormularioAgregarProducto";
-            this.LabelCodigoFormularioAgregarProducto.Size = new System.Drawing.Size(72, 24);
+            this.LabelCodigoFormularioAgregarProducto.Size = new System.Drawing.Size(88, 28);
             this.LabelCodigoFormularioAgregarProducto.TabIndex = 16;
-            this.LabelCodigoFormularioAgregarProducto.Text = "Código";
+            this.LabelCodigoFormularioAgregarProducto.Text = "Código:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(390, 251);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(266, 242);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(22, 24);
+            this.label2.Size = new System.Drawing.Size(24, 28);
             this.label2.TabIndex = 31;
             this.label2.Text = "$";
             // 
@@ -282,7 +284,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(745, 366);
+            this.ClientSize = new System.Drawing.Size(745, 343);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cmbCategoria);

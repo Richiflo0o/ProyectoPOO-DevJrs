@@ -26,5 +26,10 @@ namespace ProyectoPOO.Formularios
         {
             Application.Exit();
         }
+
+        private void TxtprecioProducto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
