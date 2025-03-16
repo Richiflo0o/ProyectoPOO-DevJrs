@@ -76,7 +76,7 @@
             // 
             this.lblAltura.AutoSize = true;
             this.lblAltura.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAltura.Location = new System.Drawing.Point(108, 509);
+            this.lblAltura.Location = new System.Drawing.Point(108, 481);
             this.lblAltura.Name = "lblAltura";
             this.lblAltura.Size = new System.Drawing.Size(52, 32);
             this.lblAltura.TabIndex = 88;
@@ -86,7 +86,7 @@
             // 
             this.lblPeso.AutoSize = true;
             this.lblPeso.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPeso.Location = new System.Drawing.Point(108, 396);
+            this.lblPeso.Location = new System.Drawing.Point(108, 368);
             this.lblPeso.Name = "lblPeso";
             this.lblPeso.Size = new System.Drawing.Size(44, 32);
             this.lblPeso.TabIndex = 87;
@@ -106,7 +106,7 @@
             // TxtAltura
             // 
             this.TxtAltura.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtAltura.Location = new System.Drawing.Point(34, 505);
+            this.TxtAltura.Location = new System.Drawing.Point(34, 477);
             this.TxtAltura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtAltura.Name = "TxtAltura";
             this.TxtAltura.Size = new System.Drawing.Size(74, 39);
@@ -115,7 +115,7 @@
             // TxtPeso
             // 
             this.TxtPeso.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPeso.Location = new System.Drawing.Point(37, 392);
+            this.TxtPeso.Location = new System.Drawing.Point(37, 364);
             this.TxtPeso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtPeso.Name = "TxtPeso";
             this.TxtPeso.Size = new System.Drawing.Size(70, 39);
@@ -124,7 +124,7 @@
             // TxtNDomicilioSocio
             // 
             this.TxtNDomicilioSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNDomicilioSocio.Location = new System.Drawing.Point(600, 510);
+            this.TxtNDomicilioSocio.Location = new System.Drawing.Point(600, 482);
             this.TxtNDomicilioSocio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtNDomicilioSocio.Name = "TxtNDomicilioSocio";
             this.TxtNDomicilioSocio.Size = new System.Drawing.Size(192, 39);
@@ -133,7 +133,7 @@
             // TxtEmailSocio
             // 
             this.TxtEmailSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtEmailSocio.Location = new System.Drawing.Point(29, 616);
+            this.TxtEmailSocio.Location = new System.Drawing.Point(29, 588);
             this.TxtEmailSocio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtEmailSocio.Name = "TxtEmailSocio";
             this.TxtEmailSocio.Size = new System.Drawing.Size(350, 39);
@@ -143,7 +143,7 @@
             // TxtTelefonoSocio
             // 
             this.TxtTelefonoSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTelefonoSocio.Location = new System.Drawing.Point(498, 402);
+            this.TxtTelefonoSocio.Location = new System.Drawing.Point(498, 374);
             this.TxtTelefonoSocio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtTelefonoSocio.Name = "TxtTelefonoSocio";
             this.TxtTelefonoSocio.Size = new System.Drawing.Size(211, 39);
@@ -152,7 +152,7 @@
             // TxtCedulaSocio
             // 
             this.TxtCedulaSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCedulaSocio.Location = new System.Drawing.Point(249, 292);
+            this.TxtCedulaSocio.Location = new System.Drawing.Point(249, 280);
             this.TxtCedulaSocio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtCedulaSocio.Name = "TxtCedulaSocio";
             this.TxtCedulaSocio.Size = new System.Drawing.Size(169, 39);
@@ -161,7 +161,7 @@
             // TxtApellidoSocio
             // 
             this.TxtApellidoSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtApellidoSocio.Location = new System.Drawing.Point(494, 186);
+            this.TxtApellidoSocio.Location = new System.Drawing.Point(494, 174);
             this.TxtApellidoSocio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtApellidoSocio.Name = "TxtApellidoSocio";
             this.TxtApellidoSocio.Size = new System.Drawing.Size(217, 39);
@@ -170,7 +170,7 @@
             // TxtNombreSocio
             // 
             this.TxtNombreSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombreSocio.Location = new System.Drawing.Point(250, 186);
+            this.TxtNombreSocio.Location = new System.Drawing.Point(250, 174);
             this.TxtNombreSocio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtNombreSocio.Name = "TxtNombreSocio";
             this.TxtNombreSocio.Size = new System.Drawing.Size(163, 39);
@@ -180,7 +180,7 @@
             // 
             this.LabelAlturaAgregarSocio.AutoSize = true;
             this.LabelAlturaAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelAlturaAgregarSocio.Location = new System.Drawing.Point(32, 469);
+            this.LabelAlturaAgregarSocio.Location = new System.Drawing.Point(32, 441);
             this.LabelAlturaAgregarSocio.Name = "LabelAlturaAgregarSocio";
             this.LabelAlturaAgregarSocio.Size = new System.Drawing.Size(85, 33);
             this.LabelAlturaAgregarSocio.TabIndex = 85;
@@ -190,7 +190,7 @@
             // 
             this.LabelPesoAgregarSocio.AutoSize = true;
             this.LabelPesoAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelPesoAgregarSocio.Location = new System.Drawing.Point(32, 355);
+            this.LabelPesoAgregarSocio.Location = new System.Drawing.Point(32, 327);
             this.LabelPesoAgregarSocio.Name = "LabelPesoAgregarSocio";
             this.LabelPesoAgregarSocio.Size = new System.Drawing.Size(68, 33);
             this.LabelPesoAgregarSocio.TabIndex = 83;
@@ -201,7 +201,7 @@
             this.DTFNacimientoSocio.CustomFormat = "01/01/2025";
             this.DTFNacimientoSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DTFNacimientoSocio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DTFNacimientoSocio.Location = new System.Drawing.Point(493, 292);
+            this.DTFNacimientoSocio.Location = new System.Drawing.Point(493, 280);
             this.DTFNacimientoSocio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DTFNacimientoSocio.MaxDate = new System.DateTime(2025, 12, 25, 23, 59, 59, 0);
             this.DTFNacimientoSocio.Name = "DTFNacimientoSocio";
@@ -214,7 +214,7 @@
             this.CmboxCantonSocio.FormattingEnabled = true;
             this.CmboxCantonSocio.Items.AddRange(new object[] {
             "Quevedo"});
-            this.CmboxCantonSocio.Location = new System.Drawing.Point(389, 508);
+            this.CmboxCantonSocio.Location = new System.Drawing.Point(389, 480);
             this.CmboxCantonSocio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CmboxCantonSocio.Name = "CmboxCantonSocio";
             this.CmboxCantonSocio.Size = new System.Drawing.Size(163, 40);
@@ -227,7 +227,7 @@
             this.cmbObjetivo.Items.AddRange(new object[] {
             "Perder Peso",
             "Ganar Masa"});
-            this.cmbObjetivo.Location = new System.Drawing.Point(182, 509);
+            this.cmbObjetivo.Location = new System.Drawing.Point(182, 481);
             this.cmbObjetivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbObjetivo.Name = "cmbObjetivo";
             this.cmbObjetivo.Size = new System.Drawing.Size(156, 40);
@@ -240,7 +240,7 @@
             this.CmboxSexoSocio.Items.AddRange(new object[] {
             "Masculino",
             "Femenino"});
-            this.CmboxSexoSocio.Location = new System.Drawing.Point(249, 396);
+            this.CmboxSexoSocio.Location = new System.Drawing.Point(249, 368);
             this.CmboxSexoSocio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CmboxSexoSocio.Name = "CmboxSexoSocio";
             this.CmboxSexoSocio.Size = new System.Drawing.Size(169, 40);
@@ -250,7 +250,7 @@
             // 
             this.LabelEmailAgregarSocio.AutoSize = true;
             this.LabelEmailAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelEmailAgregarSocio.Location = new System.Drawing.Point(24, 571);
+            this.LabelEmailAgregarSocio.Location = new System.Drawing.Point(24, 543);
             this.LabelEmailAgregarSocio.Name = "LabelEmailAgregarSocio";
             this.LabelEmailAgregarSocio.Size = new System.Drawing.Size(80, 33);
             this.LabelEmailAgregarSocio.TabIndex = 71;
@@ -260,7 +260,7 @@
             // 
             this.LabelDomicilioAgregarSocio.AutoSize = true;
             this.LabelDomicilioAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelDomicilioAgregarSocio.Location = new System.Drawing.Point(634, 461);
+            this.LabelDomicilioAgregarSocio.Location = new System.Drawing.Point(634, 433);
             this.LabelDomicilioAgregarSocio.Name = "LabelDomicilioAgregarSocio";
             this.LabelDomicilioAgregarSocio.Size = new System.Drawing.Size(127, 33);
             this.LabelDomicilioAgregarSocio.TabIndex = 70;
@@ -270,7 +270,7 @@
             // 
             this.LabelCantonAgregarSocio.AutoSize = true;
             this.LabelCantonAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelCantonAgregarSocio.Location = new System.Drawing.Point(406, 461);
+            this.LabelCantonAgregarSocio.Location = new System.Drawing.Point(406, 433);
             this.LabelCantonAgregarSocio.Name = "LabelCantonAgregarSocio";
             this.LabelCantonAgregarSocio.Size = new System.Drawing.Size(138, 33);
             this.LabelCantonAgregarSocio.TabIndex = 69;
@@ -280,7 +280,7 @@
             // 
             this.LabelPovinciaAgregarSocio.AutoSize = true;
             this.LabelPovinciaAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelPovinciaAgregarSocio.Location = new System.Drawing.Point(190, 461);
+            this.LabelPovinciaAgregarSocio.Location = new System.Drawing.Point(190, 433);
             this.LabelPovinciaAgregarSocio.Name = "LabelPovinciaAgregarSocio";
             this.LabelPovinciaAgregarSocio.Size = new System.Drawing.Size(111, 33);
             this.LabelPovinciaAgregarSocio.TabIndex = 68;
@@ -290,7 +290,7 @@
             // 
             this.LabelTelefonoAgregarSocio.AutoSize = true;
             this.LabelTelefonoAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTelefonoAgregarSocio.Location = new System.Drawing.Point(493, 355);
+            this.LabelTelefonoAgregarSocio.Location = new System.Drawing.Point(493, 327);
             this.LabelTelefonoAgregarSocio.Name = "LabelTelefonoAgregarSocio";
             this.LabelTelefonoAgregarSocio.Size = new System.Drawing.Size(112, 33);
             this.LabelTelefonoAgregarSocio.TabIndex = 67;
@@ -300,7 +300,7 @@
             // 
             this.LabelGeneroAgregarSocio.AutoSize = true;
             this.LabelGeneroAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelGeneroAgregarSocio.Location = new System.Drawing.Point(249, 355);
+            this.LabelGeneroAgregarSocio.Location = new System.Drawing.Point(249, 327);
             this.LabelGeneroAgregarSocio.Name = "LabelGeneroAgregarSocio";
             this.LabelGeneroAgregarSocio.Size = new System.Drawing.Size(95, 33);
             this.LabelGeneroAgregarSocio.TabIndex = 66;
@@ -310,7 +310,7 @@
             // 
             this.LabelFchaNacimientoAgregarSocio.AutoSize = true;
             this.LabelFchaNacimientoAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelFchaNacimientoAgregarSocio.Location = new System.Drawing.Point(487, 249);
+            this.LabelFchaNacimientoAgregarSocio.Location = new System.Drawing.Point(487, 237);
             this.LabelFchaNacimientoAgregarSocio.Name = "LabelFchaNacimientoAgregarSocio";
             this.LabelFchaNacimientoAgregarSocio.Size = new System.Drawing.Size(216, 33);
             this.LabelFchaNacimientoAgregarSocio.TabIndex = 65;
@@ -320,7 +320,7 @@
             // 
             this.LabelCedulaAgregarSocio.AutoSize = true;
             this.LabelCedulaAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelCedulaAgregarSocio.Location = new System.Drawing.Point(249, 249);
+            this.LabelCedulaAgregarSocio.Location = new System.Drawing.Point(249, 237);
             this.LabelCedulaAgregarSocio.Name = "LabelCedulaAgregarSocio";
             this.LabelCedulaAgregarSocio.Size = new System.Drawing.Size(94, 33);
             this.LabelCedulaAgregarSocio.TabIndex = 64;
@@ -330,7 +330,7 @@
             // 
             this.LabelApellidoAgregarSocio.AutoSize = true;
             this.LabelApellidoAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelApellidoAgregarSocio.Location = new System.Drawing.Point(488, 149);
+            this.LabelApellidoAgregarSocio.Location = new System.Drawing.Point(488, 137);
             this.LabelApellidoAgregarSocio.Name = "LabelApellidoAgregarSocio";
             this.LabelApellidoAgregarSocio.Size = new System.Drawing.Size(112, 33);
             this.LabelApellidoAgregarSocio.TabIndex = 63;
@@ -340,7 +340,7 @@
             // 
             this.LabelNombreAgregarSocio.AutoSize = true;
             this.LabelNombreAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelNombreAgregarSocio.Location = new System.Drawing.Point(244, 149);
+            this.LabelNombreAgregarSocio.Location = new System.Drawing.Point(244, 137);
             this.LabelNombreAgregarSocio.Name = "LabelNombreAgregarSocio";
             this.LabelNombreAgregarSocio.Size = new System.Drawing.Size(104, 33);
             this.LabelNombreAgregarSocio.TabIndex = 62;
@@ -378,7 +378,7 @@
             this.BtnSiguienteTab.Font = new System.Drawing.Font("Segoe UI Symbol", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSiguienteTab.ForeColor = System.Drawing.Color.White;
             this.BtnSiguienteTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSiguienteTab.Location = new System.Drawing.Point(482, 571);
+            this.BtnSiguienteTab.Location = new System.Drawing.Point(521, 557);
             this.BtnSiguienteTab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnSiguienteTab.Name = "BtnSiguienteTab";
             this.BtnSiguienteTab.Size = new System.Drawing.Size(310, 88);
@@ -397,7 +397,7 @@
             this.PanelAgregarSocio.Location = new System.Drawing.Point(0, 0);
             this.PanelAgregarSocio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelAgregarSocio.Name = "PanelAgregarSocio";
-            this.PanelAgregarSocio.Size = new System.Drawing.Size(820, 62);
+            this.PanelAgregarSocio.Size = new System.Drawing.Size(854, 62);
             this.PanelAgregarSocio.TabIndex = 89;
             // 
             // lblAgregarUusario
@@ -416,13 +416,14 @@
             this.PtbCerrarFormularioAgregarSocio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PtbCerrarFormularioAgregarSocio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PtbCerrarFormularioAgregarSocio.Image = ((System.Drawing.Image)(resources.GetObject("PtbCerrarFormularioAgregarSocio.Image")));
-            this.PtbCerrarFormularioAgregarSocio.Location = new System.Drawing.Point(764, 14);
+            this.PtbCerrarFormularioAgregarSocio.Location = new System.Drawing.Point(798, 14);
             this.PtbCerrarFormularioAgregarSocio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PtbCerrarFormularioAgregarSocio.Name = "PtbCerrarFormularioAgregarSocio";
             this.PtbCerrarFormularioAgregarSocio.Size = new System.Drawing.Size(33, 35);
             this.PtbCerrarFormularioAgregarSocio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PtbCerrarFormularioAgregarSocio.TabIndex = 2;
             this.PtbCerrarFormularioAgregarSocio.TabStop = false;
+            this.PtbCerrarFormularioAgregarSocio.Click += new System.EventHandler(this.PtbCerrarFormularioAgregarSocio_Click);
             // 
             // PictureBoxLogoAgregarSocio
             // 
@@ -460,7 +461,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(820, 672);
+            this.ClientSize = new System.Drawing.Size(854, 816);
             this.Controls.Add(this.TXTID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PanelAgregarSocio);

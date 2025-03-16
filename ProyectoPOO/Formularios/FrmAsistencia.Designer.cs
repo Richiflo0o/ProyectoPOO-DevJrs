@@ -95,7 +95,7 @@ namespace ProyectoPOO.Formularios
             this.tsAsistencia.Location = new System.Drawing.Point(0, 63);
             this.tsAsistencia.Name = "tsAsistencia";
             this.tsAsistencia.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.tsAsistencia.Size = new System.Drawing.Size(1200, 38);
+            this.tsAsistencia.Size = new System.Drawing.Size(1200, 33);
             this.tsAsistencia.TabIndex = 30;
             this.tsAsistencia.Text = "toolStrip1";
             // 
@@ -103,7 +103,7 @@ namespace ProyectoPOO.Formularios
             // 
             this.toolStripLabel1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(115, 33);
+            this.toolStripLabel1.Size = new System.Drawing.Size(115, 28);
             this.toolStripLabel1.Text = "Elegir Filtro:";
             // 
             // tscmbFiltro
@@ -114,26 +114,26 @@ namespace ProyectoPOO.Formularios
             "Correo",
             "Telefono"});
             this.tscmbFiltro.Name = "tscmbFiltro";
-            this.tscmbFiltro.Size = new System.Drawing.Size(180, 38);
+            this.tscmbFiltro.Size = new System.Drawing.Size(180, 33);
             this.tscmbFiltro.Text = "Nombre";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 33);
             // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(85, 33);
+            this.toolStripLabel2.Size = new System.Drawing.Size(85, 28);
             this.toolStripLabel2.Text = "Buscador";
             // 
             // txtBuscador
             // 
             this.txtBuscador.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBuscador.Name = "txtBuscador";
-            this.txtBuscador.Size = new System.Drawing.Size(148, 38);
+            this.txtBuscador.Size = new System.Drawing.Size(148, 33);
             this.txtBuscador.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBuscador_KeyUp);
             // 
             // dgvAsistencia
@@ -163,12 +163,12 @@ namespace ProyectoPOO.Formularios
             this.dgvAsistencia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvAsistencia.EnableHeadersVisualStyles = false;
             this.dgvAsistencia.GridColor = System.Drawing.Color.Teal;
-            this.dgvAsistencia.Location = new System.Drawing.Point(0, 101);
+            this.dgvAsistencia.Location = new System.Drawing.Point(0, 96);
             this.dgvAsistencia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvAsistencia.Name = "dgvAsistencia";
             this.dgvAsistencia.ReadOnly = true;
             this.dgvAsistencia.RowHeadersWidth = 62;
-            this.dgvAsistencia.Size = new System.Drawing.Size(1200, 502);
+            this.dgvAsistencia.Size = new System.Drawing.Size(1200, 507);
             this.dgvAsistencia.TabIndex = 31;
             // 
             // FrmAsistencia

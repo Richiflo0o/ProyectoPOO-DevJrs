@@ -92,6 +92,7 @@ namespace ProyectoPOO.Formularios
 
                 // Mensaje de éxito
                 MessageBox.Show("Socio agregado exitosamente.");
+                this.Close  ();
             }
             catch (SqlException ex)
             {
@@ -132,6 +133,11 @@ namespace ProyectoPOO.Formularios
             {
                 PictureBoxFotoSocio.Image = Image.FromFile(SeleccionarFotoCarpetas.FileName);
             }
+        }
+
+        private void PtbCerrarFormularioAgregarSocio_Click(object sender, EventArgs e)
+        {
+            this.Close  ();
         }
     }
 }

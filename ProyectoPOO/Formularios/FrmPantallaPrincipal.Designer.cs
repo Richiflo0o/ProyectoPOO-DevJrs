@@ -70,15 +70,15 @@
             this.panel1.BackColor = System.Drawing.Color.SeaGreen;
             this.panel1.Controls.Add(this.ptbMaximizar);
             this.panel1.Controls.Add(this.lblRolUsuario);
-            this.panel1.Controls.Add(this.lblCerrarSesion);
             this.panel1.Controls.Add(this.ptbMinimizar);
-            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.lblCerrarSesion);
             this.panel1.Controls.Add(this.PtbCerrarFmrPrincipal);
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1290, 62);
+            this.panel1.Size = new System.Drawing.Size(1421, 62);
             this.panel1.TabIndex = 3;
             // 
             // ptbMaximizar
@@ -86,7 +86,7 @@
             this.ptbMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ptbMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("ptbMaximizar.Image")));
-            this.ptbMaximizar.Location = new System.Drawing.Point(1204, 11);
+            this.ptbMaximizar.Location = new System.Drawing.Point(1333, 14);
             this.ptbMaximizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ptbMaximizar.Name = "ptbMaximizar";
             this.ptbMaximizar.Size = new System.Drawing.Size(34, 35);
@@ -100,7 +100,7 @@
             this.lblRolUsuario.AutoSize = true;
             this.lblRolUsuario.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRolUsuario.ForeColor = System.Drawing.Color.Gold;
-            this.lblRolUsuario.Location = new System.Drawing.Point(782, 15);
+            this.lblRolUsuario.Location = new System.Drawing.Point(458, 17);
             this.lblRolUsuario.Name = "lblRolUsuario";
             this.lblRolUsuario.Size = new System.Drawing.Size(185, 30);
             this.lblRolUsuario.TabIndex = 6;
@@ -111,7 +111,7 @@
             this.lblCerrarSesion.AutoSize = true;
             this.lblCerrarSesion.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCerrarSesion.ForeColor = System.Drawing.Color.White;
-            this.lblCerrarSesion.Location = new System.Drawing.Point(999, 15);
+            this.lblCerrarSesion.Location = new System.Drawing.Point(675, 17);
             this.lblCerrarSesion.Name = "lblCerrarSesion";
             this.lblCerrarSesion.Size = new System.Drawing.Size(135, 30);
             this.lblCerrarSesion.TabIndex = 5;
@@ -122,7 +122,7 @@
             this.ptbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ptbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("ptbMinimizar.Image")));
-            this.ptbMinimizar.Location = new System.Drawing.Point(1162, 11);
+            this.ptbMinimizar.Location = new System.Drawing.Point(1291, 14);
             this.ptbMinimizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ptbMinimizar.Name = "ptbMinimizar";
             this.ptbMinimizar.Size = new System.Drawing.Size(34, 35);
@@ -148,7 +148,7 @@
             this.PtbCerrarFmrPrincipal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PtbCerrarFmrPrincipal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PtbCerrarFmrPrincipal.Image = ((System.Drawing.Image)(resources.GetObject("PtbCerrarFmrPrincipal.Image")));
-            this.PtbCerrarFmrPrincipal.Location = new System.Drawing.Point(1246, 9);
+            this.PtbCerrarFmrPrincipal.Location = new System.Drawing.Point(1375, 12);
             this.PtbCerrarFmrPrincipal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PtbCerrarFmrPrincipal.Name = "PtbCerrarFmrPrincipal";
             this.PtbCerrarFmrPrincipal.Size = new System.Drawing.Size(34, 35);
@@ -173,7 +173,7 @@
             this.tsmiEstadisticas});
             this.menuStrip1.Location = new System.Drawing.Point(0, 62);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1290, 48);
+            this.menuStrip1.Size = new System.Drawing.Size(1421, 48);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -189,7 +189,7 @@
             // tsmiListaDeUsuarios
             // 
             this.tsmiListaDeUsuarios.Name = "tsmiListaDeUsuarios";
-            this.tsmiListaDeUsuarios.Size = new System.Drawing.Size(221, 34);
+            this.tsmiListaDeUsuarios.Size = new System.Drawing.Size(270, 34);
             this.tsmiListaDeUsuarios.Text = "Agregar Perfil";
             this.tsmiListaDeUsuarios.Click += new System.EventHandler(this.tsmiListaDeUsuarios_Click);
             // 
@@ -326,7 +326,7 @@
             this.pciContenedor.Location = new System.Drawing.Point(0, 110);
             this.pciContenedor.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.pciContenedor.Name = "pciContenedor";
-            this.pciContenedor.Size = new System.Drawing.Size(1290, 658);
+            this.pciContenedor.Size = new System.Drawing.Size(1421, 996);
             this.pciContenedor.TabIndex = 7;
             this.pciContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.pciContenedor_Paint);
             // 
@@ -334,7 +334,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1290, 768);
+            this.ClientSize = new System.Drawing.Size(1421, 1106);
             this.Controls.Add(this.pciContenedor);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel1);
