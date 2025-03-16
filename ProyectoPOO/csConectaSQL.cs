@@ -17,7 +17,6 @@ namespace ProyectoPOO
         public SqlDataReader oDR;
         public SqlDataAdapter oDA;
         public DataTable oDT;
-
         string Server;
         string Database;
         string Usuario;
