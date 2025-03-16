@@ -21,5 +21,10 @@ namespace ProyectoPOO.Formularios
         {
 
         }
+
+        private void btnCerrarListadoPerfil_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
