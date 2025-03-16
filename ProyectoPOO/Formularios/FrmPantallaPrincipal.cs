@@ -28,7 +28,7 @@ namespace ProyectoPOO.Formularios
             this.Hide();
         }
 
-        private void listadoDePerfilesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void tsmiListadoDeUsuarios_Click(object sender, EventArgs e)
         {
             FrmListadoUsuario listadousaurio = new FrmListadoUsuario();
             listadousaurio.Show();

@@ -15,17 +15,17 @@ namespace ProyectoPOO.Formularios
 {
     public partial class FrmAgregarPerfil : Form
     {
-        private Usuario objUsuario;
+        private cUsuarios objUsuario;
         private bool esEdicion = false;
         public FrmAgregarPerfil()
         {
             InitializeComponent();
-            objUsuario = new Usuario();
+            objUsuario = new cUsuarios();
         }
         public FrmAgregarPerfil(string identificacion)
         {
             InitializeComponent();
-            objUsuario = new Usuario();
+            objUsuario = new cUsuarios();
             objUsuario.Identificacion = identificacion;
             esEdicion = true;
             CargarDatosUsuario();
@@ -116,7 +116,7 @@ namespace ProyectoPOO.Formularios
         }
         private void CrearUsuario()
         {
-            Usuario nuevoUsuario = new Usuario
+            cUsuarios nuevoUsuario = new cUsuarios
             {
                 Identificacion = TxtBoxIdentifiacion.Text,
                 Nombres = TxtBoxNombreUsuario.Text,
