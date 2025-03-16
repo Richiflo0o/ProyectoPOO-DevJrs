@@ -88,6 +88,12 @@
     <Compile Include="Formularios\FrmAsistencia.Designer.cs">
       <DependentUpon>FrmAsistencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmAsistencia.Designer.cs">
+      <DependentUpon>FrmAsistencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmControlAcceso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmAgregarProductos.resx">
       <DependentUpon>FrmAgregarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmAsistencia.resx">
+      <DependentUpon>FrmAsistencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmAsistencia.resx">
       <DependentUpon>FrmAsistencia.cs</DependentUpon>
