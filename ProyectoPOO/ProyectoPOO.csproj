@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="clases\csConectaSQL.cs" />
     <Compile Include="clases\gInstructor.cs" />
+    <Compile Include="clases\gUsuarios.cs" />
     <Compile Include="clases\Program.cs" />
     <Compile Include="clases\Usuario.cs" />
     <Compile Include="formularios\FrmAgregarPerfil.cs">
@@ -79,6 +80,12 @@
     </Compile>
     <Compile Include="formularios\FrmControlAcceso.Designer.cs">
       <DependentUpon>FrmControlAcceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FrmListadoPerfilUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FrmListadoPerfilUsuario.Designer.cs">
+      <DependentUpon>FrmListadoPerfilUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="formularios\FrmListadoUsuario.cs">
       <SubType>Form</SubType>
@@ -143,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formularios\FrmControlAcceso.resx">
       <DependentUpon>FrmControlAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FrmListadoPerfilUsuario.resx">
+      <DependentUpon>FrmListadoPerfilUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formularios\FrmListadoUsuario.resx">
       <DependentUpon>FrmListadoUsuario.cs</DependentUpon>

@@ -3,13 +3,10 @@ using System.Data;
 using System.Windows.Forms;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
-using System.Windows.Forms;
 
 namespace AplicacionGym
 {
@@ -30,10 +27,10 @@ namespace AplicacionGym
         string Cadena;
         public csConectaSQL()
         {
-            Server = @"DESKTOP-ULDUU6I\SQLEXPRESS01";
+            Server = @"DESKTOP-22RT09N\SQLEXPRESS";
             Database = "FitMaxDB2";
             Usuario = "sa";
-            Clave = "1234";
+            Clave = "123456";
         }
 
         public csConectaSQL(string Server, string Database, string Usuario, string Clave)
@@ -54,6 +51,7 @@ namespace AplicacionGym
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
                 return false;
             }
             return true;
@@ -77,6 +75,7 @@ namespace AplicacionGym
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
                 return false;
             }
             return true;
@@ -215,7 +214,6 @@ namespace AplicacionGym
             cerrarConexion();
             return temporal;
         }
-
         public DataTable retornaRegistros(string Sentencia)
         {
             try

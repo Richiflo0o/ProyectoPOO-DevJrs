@@ -16,8 +16,6 @@ namespace ProyectoPOO.Formularios
     {
         private csConectaSQL conexion = new csConectaSQL();
         private string identificacionSeleccionada = "";
-
-
         public FrmListadoUsuario()
         {
             InitializeComponent();
@@ -115,7 +113,6 @@ namespace ProyectoPOO.Formularios
 
                 identificacionSeleccionada = row.Cells["Identificación"].Value.ToString();
             }
-
         }
     }
 }
