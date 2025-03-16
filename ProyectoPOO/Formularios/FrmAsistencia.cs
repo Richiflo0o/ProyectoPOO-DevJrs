@@ -43,15 +43,22 @@ namespace ProyectoPOO.Formularios
                 switch (tscmbFiltro.Text)
                 {
                     case "ID":
-                        dgvAsistencia.DataSource = sQL.retornaRegistros("select S.id_persona as ID, nombres as Nombre,Correo,Telefono,Estado from Socios as S inner JOIN Personas as P on S.id_persona = P.id_persona where nombres like '"+txtBuscador.Text +"%'");
+                        dgvAsistencia.DataSource = sQL.retornaRegistros("select S.id_persona as ID, nombres as Nombre,Correo,Telefono,Estado from Socios as S inner JOIN Personas as P on S.id_persona = P.id_persona where S.id_persona like '" + txtBuscador.Text + "%'");
                         break;
                     case "Nombre":
+                        dgvAsistencia.DataSource = sQL.retornaRegistros("select S.id_persona as ID, nombres as Nombre,Correo,Telefono,Estado from Socios as S inner JOIN Personas as P on S.id_persona = P.id_persona where nombres like '" + txtBuscador.Text + "%'");
                         break;
-                    case "Corre":
+                    case "Correo":
+                        dgvAsistencia.DataSource = sQL.retornaRegistros("select S.id_persona as ID, nombres as Nombre,Correo,Telefono,Estado from Socios as S inner JOIN Personas as P on S.id_persona = P.id_persona where Correo like '" + txtBuscador.Text + "%'");
                         break;
                     case "Telefono":
+                        dgvAsistencia.DataSource = sQL.retornaRegistros("select S.id_persona as ID, nombres as Nombre,Correo,Telefono,Estado from Socios as S inner JOIN Personas as P on S.id_persona = P.id_persona where Telefono like '" + txtBuscador.Text + "%'");
                         break;
                 }
+            }
+            else
+            {
+                dgvAsistencia.DataSource = sQL.retornaRegistros("select S.id_persona as ID, nombres as Nombre,Correo,Telefono,Estado from Socios as S inner JOIN Personas as P on S.id_persona = P.id_persona");
             }
         }
     }
