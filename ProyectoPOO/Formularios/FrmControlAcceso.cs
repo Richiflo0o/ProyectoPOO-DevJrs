@@ -16,5 +16,10 @@ namespace ProyectoPOO.Formularios
         {
             InitializeComponent();
         }
+        private void HorayFecha_Tick(object sender, EventArgs e)
+        {
+            LabelHoraHoy.Text = DateTime.Now.ToString("HH:mm:ss");
+            LabelFechaHoy.Text = DateTime.Now.ToShortDateString();
+        }
     }
 }

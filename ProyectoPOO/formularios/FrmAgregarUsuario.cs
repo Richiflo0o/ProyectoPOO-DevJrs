@@ -32,7 +32,7 @@ namespace ProyectoPOO.Formularios
 
             // Validaciones
             if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(apellido) || string.IsNullOrEmpty(cedula) ||
-                !decimal.TryParse(TxtPeso.Text, out peso) || !decimal.TryParse(TxtAltura.Text, out altura) ||
+                !decimal.TryParse(TxtPesoSocio.Text, out peso) || !decimal.TryParse(TxtAlturaSocio.Text, out altura) ||
                 string.IsNullOrEmpty(CmboxSexoSocio.SelectedItem?.ToString()) ||
                 string.IsNullOrEmpty(TxtTelefonoSocio.Text) ||
                 string.IsNullOrEmpty(TxtNDomicilioSocio.Text) ||
