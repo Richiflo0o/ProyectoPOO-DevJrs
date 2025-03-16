@@ -209,8 +209,9 @@
             // tsmiListadoDeUsuarios
             // 
             this.tsmiListadoDeUsuarios.Name = "tsmiListadoDeUsuarios";
-            this.tsmiListadoDeUsuarios.Size = new System.Drawing.Size(270, 34);
+            this.tsmiListadoDeUsuarios.Size = new System.Drawing.Size(176, 22);
             this.tsmiListadoDeUsuarios.Text = "Listado de Usuarios";
+            this.tsmiListadoDeUsuarios.Click += new System.EventHandler(this.tsmiListadoDeUsuarios_Click);
             // 
             // tsmiAsistencia
             // 
@@ -316,6 +317,7 @@
             this.pciContenedor.Name = "pciContenedor";
             this.pciContenedor.Size = new System.Drawing.Size(1290, 658);
             this.pciContenedor.TabIndex = 7;
+            this.pciContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.pciContenedor_Paint);
             // 
             // verListadoDePerfilesToolStripMenuItem
             // 

@@ -36,7 +36,9 @@ namespace ProyectoPOO.Formularios
                 Formularios.Show();
             }
         }
-
+        //
+        //Formularios Secundario que contiene el principal
+        //
         private void FrmPantallaPrincipal_Load(object sender, EventArgs e)
         {
             FrmControlAcceso ControlAccesoVer = new FrmControlAcceso();
@@ -45,7 +47,29 @@ namespace ProyectoPOO.Formularios
             ControlAccesoVer.Dock = DockStyle.Fill;
             AbrirFormulariosHijas(ControlAccesoVer);
         }
+        private void tsmiListadoDeUsuarios_Click(object sender, EventArgs e)
+        {
+            FrmListadoUsuario listadoUsuario = new FrmListadoUsuario();
+            listadoUsuario.TopLevel = false;
+            listadoUsuario.FormBorderStyle = FormBorderStyle.None;
+            listadoUsuario.Dock = DockStyle.Fill;
+            AbrirFormulariosHijas(listadoUsuario);
+        }
+        private void pciContenedor_Paint(object sender, PaintEventArgs e)
+        {
+            if (this.pciContenedor.Controls.Count == 0)
+            {
+                FrmControlAcceso ControlAccesoVer = new FrmControlAcceso();
+                ControlAccesoVer.TopLevel = false;
+                ControlAccesoVer.FormBorderStyle = FormBorderStyle.None;
+                ControlAccesoVer.Dock = DockStyle.Fill;
+                pciContenedor.Controls.Clear();
+                AbrirFormulariosHijas(ControlAccesoVer);
+            }
+        }
+        //
         //Panel de Control
+        //
         private void ptbMaximizar_Click(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Normal)
@@ -64,6 +88,6 @@ namespace ProyectoPOO.Formularios
         private void ptbMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        }
+        }  
     }
 }
