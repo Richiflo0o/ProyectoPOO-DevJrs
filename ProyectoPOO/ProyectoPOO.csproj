@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="clases\csConectaSQL.cs" />
     <Compile Include="clases\gInstructor.cs" />
+    <Compile Include="clases\gProductos.cs" />
     <Compile Include="clases\gUsuarios.cs" />
     <Compile Include="clases\Program.cs" />
     <Compile Include="clases\Usuario.cs" />
