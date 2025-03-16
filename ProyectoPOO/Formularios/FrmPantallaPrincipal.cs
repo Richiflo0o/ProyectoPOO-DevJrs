@@ -62,13 +62,6 @@ namespace ProyectoPOO.Formularios
             crearperfil.Show();
             this.Hide();
         }
-
-        private void tsmiListadoDeUsuarios_Click(object sender, EventArgs e)
-        {
-            FrmListadoUsuario listadousaurio = new FrmListadoUsuario();
-            listadousaurio.Show();
-            this.Hide();
-        }
         private void ConfigurarInterfaz()
         {
             if (tipoUsuario == "Usuario")
@@ -94,7 +87,6 @@ namespace ProyectoPOO.Formularios
             {
                 this.pciContenedor.Controls.RemoveAt(0);
             }
-
             Form Formularios = formulariosHijos as Form;
             if (Formularios != null)
             {
@@ -106,7 +98,6 @@ namespace ProyectoPOO.Formularios
                 Formularios.Show();
             }
         }
-
         private void pciContenedor_Paint(object sender, PaintEventArgs e)
         {
             if (this.pciContenedor.Controls.Count == 0)
@@ -116,6 +107,12 @@ namespace ProyectoPOO.Formularios
                 AbrirFormulariosHijas(ControlAccesoVer);
             }
         }
+        private void tsmiListadoDeUsuarios_Click(object sender, EventArgs e)
+        {
+            FrmListadoUsuario listadousaurio = new FrmListadoUsuario();
+            pciContenedor.Controls.Clear();
+            AbrirFormulariosHijas(listadousaurio);
+        }
 
         private void agregarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -124,5 +121,7 @@ namespace ProyectoPOO.Formularios
             this.Hide();
 
         }
+    }
+}
     }
 }
