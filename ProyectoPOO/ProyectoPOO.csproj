@@ -142,6 +142,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formularios\FrmControlAcceso.resx">
       <DependentUpon>FrmControlAcceso.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="formularios\FrmListadoUsuario.resx">
       <DependentUpon>FrmListadoUsuario.cs</DependentUpon>

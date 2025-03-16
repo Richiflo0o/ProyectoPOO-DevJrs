@@ -32,8 +32,8 @@
             this.lblAltura = new System.Windows.Forms.Label();
             this.lblPeso = new System.Windows.Forms.Label();
             this.LabelDatosDelSocioVer = new System.Windows.Forms.Label();
-            this.TxtAlturaSocio = new System.Windows.Forms.TextBox();
-            this.TxtPesoSocio = new System.Windows.Forms.TextBox();
+            this.TxtAltura = new System.Windows.Forms.TextBox();
+            this.TxtPeso = new System.Windows.Forms.TextBox();
             this.TxtNDomicilioSocio = new System.Windows.Forms.TextBox();
             this.TxtEmailSocio = new System.Windows.Forms.TextBox();
             this.TxtTelefonoSocio = new System.Windows.Forms.TextBox();
@@ -44,7 +44,7 @@
             this.LabelPesoAgregarSocio = new System.Windows.Forms.Label();
             this.DTFNacimientoSocio = new System.Windows.Forms.DateTimePicker();
             this.CmboxCantonSocio = new System.Windows.Forms.ComboBox();
-            this.CmbProvinciaSocio = new System.Windows.Forms.ComboBox();
+            this.cmbObjetivo = new System.Windows.Forms.ComboBox();
             this.CmboxSexoSocio = new System.Windows.Forms.ComboBox();
             this.LabelEmailAgregarSocio = new System.Windows.Forms.Label();
             this.LabelDomicilioAgregarSocio = new System.Windows.Forms.Label();
@@ -63,6 +63,8 @@
             this.lblAgregarUusario = new System.Windows.Forms.Label();
             this.PtbCerrarFormularioAgregarSocio = new System.Windows.Forms.PictureBox();
             this.PictureBoxLogoAgregarSocio = new System.Windows.Forms.PictureBox();
+            this.TXTID = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PictureSeleccionarFoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxFotoSocio)).BeginInit();
             this.PanelAgregarSocio.SuspendLayout();
@@ -101,23 +103,23 @@
             this.LabelDatosDelSocioVer.TabIndex = 86;
             this.LabelDatosDelSocioVer.Text = "DATOS DEL USUARIO";
             // 
-            // TxtAlturaSocio
+            // TxtAltura
             // 
-            this.TxtAlturaSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtAlturaSocio.Location = new System.Drawing.Point(34, 505);
-            this.TxtAlturaSocio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TxtAlturaSocio.Name = "TxtAlturaSocio";
-            this.TxtAlturaSocio.Size = new System.Drawing.Size(74, 39);
-            this.TxtAlturaSocio.TabIndex = 79;
+            this.TxtAltura.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtAltura.Location = new System.Drawing.Point(34, 505);
+            this.TxtAltura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtAltura.Name = "TxtAltura";
+            this.TxtAltura.Size = new System.Drawing.Size(74, 39);
+            this.TxtAltura.TabIndex = 79;
             // 
-            // TxtPesoSocio
+            // TxtPeso
             // 
-            this.TxtPesoSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPesoSocio.Location = new System.Drawing.Point(37, 392);
-            this.TxtPesoSocio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TxtPesoSocio.Name = "TxtPesoSocio";
-            this.TxtPesoSocio.Size = new System.Drawing.Size(70, 39);
-            this.TxtPesoSocio.TabIndex = 76;
+            this.TxtPeso.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPeso.Location = new System.Drawing.Point(37, 392);
+            this.TxtPeso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtPeso.Name = "TxtPeso";
+            this.TxtPeso.Size = new System.Drawing.Size(70, 39);
+            this.TxtPeso.TabIndex = 76;
             // 
             // TxtNDomicilioSocio
             // 
@@ -136,6 +138,7 @@
             this.TxtEmailSocio.Name = "TxtEmailSocio";
             this.TxtEmailSocio.Size = new System.Drawing.Size(350, 39);
             this.TxtEmailSocio.TabIndex = 83;
+            this.TxtEmailSocio.TextChanged += new System.EventHandler(this.TxtEmailSocio_TextChanged);
             // 
             // TxtTelefonoSocio
             // 
@@ -176,20 +179,20 @@
             // LabelAlturaAgregarSocio
             // 
             this.LabelAlturaAgregarSocio.AutoSize = true;
-            this.LabelAlturaAgregarSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelAlturaAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelAlturaAgregarSocio.Location = new System.Drawing.Point(32, 469);
             this.LabelAlturaAgregarSocio.Name = "LabelAlturaAgregarSocio";
-            this.LabelAlturaAgregarSocio.Size = new System.Drawing.Size(83, 32);
+            this.LabelAlturaAgregarSocio.Size = new System.Drawing.Size(85, 33);
             this.LabelAlturaAgregarSocio.TabIndex = 85;
             this.LabelAlturaAgregarSocio.Text = "Altura";
             // 
             // LabelPesoAgregarSocio
             // 
             this.LabelPesoAgregarSocio.AutoSize = true;
-            this.LabelPesoAgregarSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelPesoAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelPesoAgregarSocio.Location = new System.Drawing.Point(32, 355);
             this.LabelPesoAgregarSocio.Name = "LabelPesoAgregarSocio";
-            this.LabelPesoAgregarSocio.Size = new System.Drawing.Size(68, 32);
+            this.LabelPesoAgregarSocio.Size = new System.Drawing.Size(68, 33);
             this.LabelPesoAgregarSocio.TabIndex = 83;
             this.LabelPesoAgregarSocio.Text = "Peso";
             // 
@@ -217,17 +220,17 @@
             this.CmboxCantonSocio.Size = new System.Drawing.Size(163, 40);
             this.CmboxCantonSocio.TabIndex = 81;
             // 
-            // CmbProvinciaSocio
+            // cmbObjetivo
             // 
-            this.CmbProvinciaSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmbProvinciaSocio.FormattingEnabled = true;
-            this.CmbProvinciaSocio.Items.AddRange(new object[] {
+            this.cmbObjetivo.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbObjetivo.FormattingEnabled = true;
+            this.cmbObjetivo.Items.AddRange(new object[] {
             "Los Rios"});
-            this.CmbProvinciaSocio.Location = new System.Drawing.Point(182, 509);
-            this.CmbProvinciaSocio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.CmbProvinciaSocio.Name = "CmbProvinciaSocio";
-            this.CmbProvinciaSocio.Size = new System.Drawing.Size(156, 40);
-            this.CmbProvinciaSocio.TabIndex = 80;
+            this.cmbObjetivo.Location = new System.Drawing.Point(182, 509);
+            this.cmbObjetivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbObjetivo.Name = "cmbObjetivo";
+            this.cmbObjetivo.Size = new System.Drawing.Size(156, 40);
+            this.cmbObjetivo.TabIndex = 80;
             // 
             // CmboxSexoSocio
             // 
@@ -245,100 +248,100 @@
             // LabelEmailAgregarSocio
             // 
             this.LabelEmailAgregarSocio.AutoSize = true;
-            this.LabelEmailAgregarSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelEmailAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelEmailAgregarSocio.Location = new System.Drawing.Point(24, 571);
             this.LabelEmailAgregarSocio.Name = "LabelEmailAgregarSocio";
-            this.LabelEmailAgregarSocio.Size = new System.Drawing.Size(76, 32);
+            this.LabelEmailAgregarSocio.Size = new System.Drawing.Size(80, 33);
             this.LabelEmailAgregarSocio.TabIndex = 71;
             this.LabelEmailAgregarSocio.Text = "Email";
             // 
             // LabelDomicilioAgregarSocio
             // 
             this.LabelDomicilioAgregarSocio.AutoSize = true;
-            this.LabelDomicilioAgregarSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelDomicilioAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelDomicilioAgregarSocio.Location = new System.Drawing.Point(634, 461);
             this.LabelDomicilioAgregarSocio.Name = "LabelDomicilioAgregarSocio";
-            this.LabelDomicilioAgregarSocio.Size = new System.Drawing.Size(124, 32);
+            this.LabelDomicilioAgregarSocio.Size = new System.Drawing.Size(127, 33);
             this.LabelDomicilioAgregarSocio.TabIndex = 70;
             this.LabelDomicilioAgregarSocio.Text = "Domicilio";
             // 
             // LabelCantonAgregarSocio
             // 
             this.LabelCantonAgregarSocio.AutoSize = true;
-            this.LabelCantonAgregarSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelCantonAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelCantonAgregarSocio.Location = new System.Drawing.Point(406, 461);
             this.LabelCantonAgregarSocio.Name = "LabelCantonAgregarSocio";
-            this.LabelCantonAgregarSocio.Size = new System.Drawing.Size(142, 32);
+            this.LabelCantonAgregarSocio.Size = new System.Drawing.Size(138, 33);
             this.LabelCantonAgregarSocio.TabIndex = 69;
             this.LabelCantonAgregarSocio.Text = "Membresia";
             // 
             // LabelPovinciaAgregarSocio
             // 
             this.LabelPovinciaAgregarSocio.AutoSize = true;
-            this.LabelPovinciaAgregarSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelPovinciaAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelPovinciaAgregarSocio.Location = new System.Drawing.Point(190, 461);
             this.LabelPovinciaAgregarSocio.Name = "LabelPovinciaAgregarSocio";
-            this.LabelPovinciaAgregarSocio.Size = new System.Drawing.Size(113, 32);
+            this.LabelPovinciaAgregarSocio.Size = new System.Drawing.Size(111, 33);
             this.LabelPovinciaAgregarSocio.TabIndex = 68;
             this.LabelPovinciaAgregarSocio.Text = "Objetivo";
             // 
             // LabelTelefonoAgregarSocio
             // 
             this.LabelTelefonoAgregarSocio.AutoSize = true;
-            this.LabelTelefonoAgregarSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTelefonoAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelTelefonoAgregarSocio.Location = new System.Drawing.Point(493, 355);
             this.LabelTelefonoAgregarSocio.Name = "LabelTelefonoAgregarSocio";
-            this.LabelTelefonoAgregarSocio.Size = new System.Drawing.Size(117, 32);
+            this.LabelTelefonoAgregarSocio.Size = new System.Drawing.Size(112, 33);
             this.LabelTelefonoAgregarSocio.TabIndex = 67;
             this.LabelTelefonoAgregarSocio.Text = "Telefono";
             // 
             // LabelGeneroAgregarSocio
             // 
             this.LabelGeneroAgregarSocio.AutoSize = true;
-            this.LabelGeneroAgregarSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelGeneroAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelGeneroAgregarSocio.Location = new System.Drawing.Point(249, 355);
             this.LabelGeneroAgregarSocio.Name = "LabelGeneroAgregarSocio";
-            this.LabelGeneroAgregarSocio.Size = new System.Drawing.Size(98, 32);
+            this.LabelGeneroAgregarSocio.Size = new System.Drawing.Size(95, 33);
             this.LabelGeneroAgregarSocio.TabIndex = 66;
             this.LabelGeneroAgregarSocio.Text = "Genero";
             // 
             // LabelFchaNacimientoAgregarSocio
             // 
             this.LabelFchaNacimientoAgregarSocio.AutoSize = true;
-            this.LabelFchaNacimientoAgregarSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelFchaNacimientoAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelFchaNacimientoAgregarSocio.Location = new System.Drawing.Point(487, 249);
             this.LabelFchaNacimientoAgregarSocio.Name = "LabelFchaNacimientoAgregarSocio";
-            this.LabelFchaNacimientoAgregarSocio.Size = new System.Drawing.Size(222, 32);
+            this.LabelFchaNacimientoAgregarSocio.Size = new System.Drawing.Size(216, 33);
             this.LabelFchaNacimientoAgregarSocio.TabIndex = 65;
             this.LabelFchaNacimientoAgregarSocio.Text = "Fecha Nacimiento";
             // 
             // LabelCedulaAgregarSocio
             // 
             this.LabelCedulaAgregarSocio.AutoSize = true;
-            this.LabelCedulaAgregarSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelCedulaAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelCedulaAgregarSocio.Location = new System.Drawing.Point(249, 249);
             this.LabelCedulaAgregarSocio.Name = "LabelCedulaAgregarSocio";
-            this.LabelCedulaAgregarSocio.Size = new System.Drawing.Size(94, 32);
+            this.LabelCedulaAgregarSocio.Size = new System.Drawing.Size(94, 33);
             this.LabelCedulaAgregarSocio.TabIndex = 64;
             this.LabelCedulaAgregarSocio.Text = "Cedula";
             // 
             // LabelApellidoAgregarSocio
             // 
             this.LabelApellidoAgregarSocio.AutoSize = true;
-            this.LabelApellidoAgregarSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelApellidoAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelApellidoAgregarSocio.Location = new System.Drawing.Point(488, 149);
             this.LabelApellidoAgregarSocio.Name = "LabelApellidoAgregarSocio";
-            this.LabelApellidoAgregarSocio.Size = new System.Drawing.Size(110, 32);
+            this.LabelApellidoAgregarSocio.Size = new System.Drawing.Size(112, 33);
             this.LabelApellidoAgregarSocio.TabIndex = 63;
             this.LabelApellidoAgregarSocio.Text = "Apellido";
             // 
             // LabelNombreAgregarSocio
             // 
             this.LabelNombreAgregarSocio.AutoSize = true;
-            this.LabelNombreAgregarSocio.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelNombreAgregarSocio.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelNombreAgregarSocio.Location = new System.Drawing.Point(244, 149);
             this.LabelNombreAgregarSocio.Name = "LabelNombreAgregarSocio";
-            this.LabelNombreAgregarSocio.Size = new System.Drawing.Size(108, 32);
+            this.LabelNombreAgregarSocio.Size = new System.Drawing.Size(104, 33);
             this.LabelNombreAgregarSocio.TabIndex = 62;
             this.LabelNombreAgregarSocio.Text = "Nombre";
             // 
@@ -380,6 +383,7 @@
             this.BtnSiguienteTab.TabIndex = 59;
             this.BtnSiguienteTab.Text = "Guardar";
             this.BtnSiguienteTab.UseVisualStyleBackColor = false;
+            this.BtnSiguienteTab.Click += new System.EventHandler(this.BtnSiguienteTab_Click);
             // 
             // PanelAgregarSocio
             // 
@@ -430,18 +434,39 @@
             this.PictureBoxLogoAgregarSocio.TabIndex = 1;
             this.PictureBoxLogoAgregarSocio.TabStop = false;
             // 
+            // TXTID
+            // 
+            this.TXTID.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTID.Location = new System.Drawing.Point(784, 66);
+            this.TXTID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TXTID.Name = "TXTID";
+            this.TXTID.Size = new System.Drawing.Size(36, 39);
+            this.TXTID.TabIndex = 91;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(735, 69);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 33);
+            this.label1.TabIndex = 90;
+            this.label1.Text = "ID";
+            // 
             // FrmAgregarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(820, 672);
+            this.Controls.Add(this.TXTID);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.PanelAgregarSocio);
             this.Controls.Add(this.lblAltura);
             this.Controls.Add(this.lblPeso);
             this.Controls.Add(this.LabelDatosDelSocioVer);
-            this.Controls.Add(this.TxtAlturaSocio);
-            this.Controls.Add(this.TxtPesoSocio);
+            this.Controls.Add(this.TxtAltura);
+            this.Controls.Add(this.TxtPeso);
             this.Controls.Add(this.TxtNDomicilioSocio);
             this.Controls.Add(this.TxtEmailSocio);
             this.Controls.Add(this.TxtTelefonoSocio);
@@ -452,7 +477,7 @@
             this.Controls.Add(this.LabelPesoAgregarSocio);
             this.Controls.Add(this.DTFNacimientoSocio);
             this.Controls.Add(this.CmboxCantonSocio);
-            this.Controls.Add(this.CmbProvinciaSocio);
+            this.Controls.Add(this.cmbObjetivo);
             this.Controls.Add(this.CmboxSexoSocio);
             this.Controls.Add(this.LabelEmailAgregarSocio);
             this.Controls.Add(this.LabelDomicilioAgregarSocio);
@@ -487,8 +512,8 @@
         private System.Windows.Forms.Label lblAltura;
         private System.Windows.Forms.Label lblPeso;
         private System.Windows.Forms.Label LabelDatosDelSocioVer;
-        public System.Windows.Forms.TextBox TxtAlturaSocio;
-        public System.Windows.Forms.TextBox TxtPesoSocio;
+        public System.Windows.Forms.TextBox TxtAltura;
+        public System.Windows.Forms.TextBox TxtPeso;
         public System.Windows.Forms.TextBox TxtNDomicilioSocio;
         public System.Windows.Forms.TextBox TxtEmailSocio;
         public System.Windows.Forms.TextBox TxtTelefonoSocio;
@@ -499,7 +524,7 @@
         private System.Windows.Forms.Label LabelPesoAgregarSocio;
         public System.Windows.Forms.DateTimePicker DTFNacimientoSocio;
         public System.Windows.Forms.ComboBox CmboxCantonSocio;
-        public System.Windows.Forms.ComboBox CmbProvinciaSocio;
+        public System.Windows.Forms.ComboBox cmbObjetivo;
         public System.Windows.Forms.ComboBox CmboxSexoSocio;
         private System.Windows.Forms.Label LabelEmailAgregarSocio;
         private System.Windows.Forms.Label LabelDomicilioAgregarSocio;
@@ -518,5 +543,7 @@
         public System.Windows.Forms.Label lblAgregarUusario;
         private System.Windows.Forms.PictureBox PtbCerrarFormularioAgregarSocio;
         private System.Windows.Forms.PictureBox PictureBoxLogoAgregarSocio;
+        public System.Windows.Forms.TextBox TXTID;
+        private System.Windows.Forms.Label label1;
     }
 }
