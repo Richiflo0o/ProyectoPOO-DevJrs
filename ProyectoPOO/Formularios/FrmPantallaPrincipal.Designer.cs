@@ -40,6 +40,7 @@
             this.tsmiPerfilUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiListaDeUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiUsuarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiListadoDeUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAsistencia = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiMembresia = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,7 +57,6 @@
             this.tsmiEstadisticas = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiPagosRealizados = new System.Windows.Forms.ToolStripMenuItem();
             this.pciContenedor = new System.Windows.Forms.Panel();
-            this.agregarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbMinimizar)).BeginInit();
@@ -173,7 +173,6 @@
             this.tsmiEstadisticas});
             this.menuStrip1.Location = new System.Drawing.Point(0, 62);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(1290, 48);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
@@ -204,6 +203,13 @@
             this.tsmiUsuarios.Name = "tsmiUsuarios";
             this.tsmiUsuarios.Size = new System.Drawing.Size(120, 44);
             this.tsmiUsuarios.Text = "Usuarios";
+            // 
+            // agregarUsuarioToolStripMenuItem
+            // 
+            this.agregarUsuarioToolStripMenuItem.Name = "agregarUsuarioToolStripMenuItem";
+            this.agregarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.agregarUsuarioToolStripMenuItem.Text = "Agregar Usuario";
+            this.agregarUsuarioToolStripMenuItem.Click += new System.EventHandler(this.agregarUsuarioToolStripMenuItem_Click);
             // 
             // tsmiListadoDeUsuarios
             // 
@@ -323,12 +329,6 @@
             this.pciContenedor.Size = new System.Drawing.Size(1290, 658);
             this.pciContenedor.TabIndex = 7;
             this.pciContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.pciContenedor_Paint);
-            // 
-            // agregarUsuarioToolStripMenuItem
-            // 
-            this.agregarUsuarioToolStripMenuItem.Name = "agregarUsuarioToolStripMenuItem";
-            this.agregarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.agregarUsuarioToolStripMenuItem.Text = "Agregar Usuario";
             // 
             // FrmPantallaPrincipal
             // 

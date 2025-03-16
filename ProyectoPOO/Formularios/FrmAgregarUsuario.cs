@@ -22,20 +22,32 @@ namespace ProyectoPOO.Formularios
 
         private void BtnSiguienteTab_Click(object sender, EventArgs e)
         {
-         
             // Recolectar datos del formulario
-            string nombre = TxtNombreSocio.Text;
-            string apellido = TxtApellidoSocio.Text;
-            string cedula = TxtCedulaSocio.Text;
+            string nombre = TxtNombreSocio.Text.Trim();
+            string apellido = TxtApellidoSocio.Text.Trim();
+            string cedula = TxtCedulaSocio.Text.Trim();
             DateTime fechaNacimiento = DTFNacimientoSocio.Value;
-            decimal peso = Convert.ToDecimal(TxtPeso.Text);
-            string genero = CmboxSexoSocio.SelectedItem.ToString();
-            string telefono = TxtTelefonoSocio.Text;
-            decimal altura = Convert.ToDecimal(TxtAltura.Text);
-            string objetivo = cmbObjetivo.Text;
-            int idMembresia = Convert.ToInt32(CmboxCantonSocio.SelectedValue);
-            string domicilio = TxtNDomicilioSocio.Text;
-            string email = TxtEmailSocio.Text;
+            decimal peso;
+            decimal altura;
+
+            // Validaciones
+            if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(apellido) || string.IsNullOrEmpty(cedula) ||
+                !decimal.TryParse(TxtPeso.Text, out peso) || !decimal.TryParse(TxtAltura.Text, out altura) ||
+                string.IsNullOrEmpty(CmboxSexoSocio.SelectedItem?.ToString()) ||
+                string.IsNullOrEmpty(TxtTelefonoSocio.Text) ||
+                string.IsNullOrEmpty(TxtNDomicilioSocio.Text) ||
+                string.IsNullOrEmpty(TxtEmailSocio.Text))
+            {
+                MessageBox.Show("Por favor, complete todos los campos obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Validar formato de email
+            if (!IsValidEmail(TxtEmailSocio.Text))
+            {
+                MessageBox.Show("Por favor, ingrese un correo electrónico válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             // Manejo de la imagen
             byte[] imagen = null;
@@ -47,41 +59,79 @@ namespace ProyectoPOO.Formularios
                     imagen = ms.ToArray();
                 }
             }
-            using (SqlConnection conexion = new SqlConnection(@"Server=DESKTOP-ULDUU6I\SQLEXPRESS01;Database=FitMaxDB2;User  Id=sa;Password=1234;"))
+
+            // Inserción en la base de datos
+            try
             {
-                string query = @"
-            INSERT INTO Socios (Imagen, Nombre, Apellido, Cedula, FechaNacimiento, Peso, Genero, Telefono, Altura, Objetivo, IdMembresia, Domicilio, Email)
+                using (SqlConnection conexion = new SqlConnection(@"Server=DESKTOP-ULDUU6I\SQLEXPRESS01;Database=FitMaxDB2;User =sa;Password=1234;"))
+                {
+                    string query = @"
+            INSERT INTO Socioss (Imagen, Nombre, Apellido, Cedula, FechaNacimiento, Peso, Genero, Telefono, Altura, Objetivo, IdMembresia, Domicilio, Email)
             VALUES (@Imagen, @Nombre, @Apellido, @Cedula, @FechaNacimiento, @Peso, @Genero, @Telefono, @Altura, @Objetivo, @IdMembresia, @Domicilio, @Email)";
 
-                using (SqlCommand cmd = new SqlCommand(query, conexion))
-                {
-                    cmd.Parameters.AddWithValue("@Imagen", imagen);
-                    cmd.Parameters.AddWithValue("@Nombre", nombre);
-                    cmd.Parameters.AddWithValue("@Apellido", apellido);
-                    cmd.Parameters.AddWithValue("@Cedula", cedula);
-                    cmd.Parameters.AddWithValue("@FechaNacimiento", fechaNacimiento);
-                    cmd.Parameters.AddWithValue("@Peso", peso);
-                    cmd.Parameters.AddWithValue("@Genero", genero);
-                    cmd.Parameters.AddWithValue("@Telefono", telefono);
-                    cmd.Parameters.AddWithValue("@Altura", altura);
-                    cmd.Parameters.AddWithValue("@Objetivo", objetivo);
-                    cmd.Parameters.AddWithValue("@IdMembresia", idMembresia);
-                    cmd.Parameters.AddWithValue("@Domicilio", domicilio);
-                    cmd.Parameters.AddWithValue("@Email", email);
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.AddWithValue("@Imagen", imagen);
+                        cmd.Parameters.AddWithValue("@Nombre", nombre);
+                        cmd.Parameters.AddWithValue("@Apellido", apellido);
+                        cmd.Parameters.AddWithValue("@Cedula", cedula);
+                        cmd.Parameters.AddWithValue("@FechaNacimiento", fechaNacimiento);
+                        cmd.Parameters.AddWithValue("@Peso", peso);
+                        cmd.Parameters.AddWithValue("@Genero", CmboxSexoSocio.SelectedItem.ToString());
+                        cmd.Parameters.AddWithValue("@Telefono", TxtTelefonoSocio.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Altura", altura);
+                        cmd.Parameters.AddWithValue("@Objetivo", cmbObjetivo.Text.Trim());
+                        cmd.Parameters.AddWithValue("@IdMembresia", Convert.ToInt32(CmboxCantonSocio.SelectedValue));
+                        cmd.Parameters.AddWithValue("@Domicilio", TxtNDomicilioSocio.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Email", TxtEmailSocio.Text.Trim());
 
-                    conexion.Open();
-                    cmd.ExecuteNonQuery();
+                        conexion.Open();
+                        cmd.ExecuteNonQuery();
+                    }
                 }
-            }
 
-            // Mensaje de éxito
-            MessageBox.Show("Socio agregado exitosamente.");
-        
+                // Mensaje de éxito
+                MessageBox.Show("Socio agregado exitosamente.");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Error al agregar el socio: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+        // Método para validar el formato del correo electrónico
+        private bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        
 
         private void TxtEmailSocio_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void PictureSeleccionarFoto_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog SeleccionarFotoCarpetas = new OpenFileDialog
+            {
+                Filter = "Imagenes |*.jpg; *.png",
+                InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures),
+                Title = "Seleccionar Imagen"
+            };
+
+            if (SeleccionarFotoCarpetas.ShowDialog() == DialogResult.OK)
+            {
+                PictureBoxFotoSocio.Image = Image.FromFile(SeleccionarFotoCarpetas.FileName);
+            }
         }
     }
 }
